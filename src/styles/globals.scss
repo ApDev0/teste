@@ -1,0 +1,24 @@
+@import './variaveis.scss';
+
+
+*{
+    padding: 0;
+    margin: 0;
+    background-color: $background;
+}
+
+a{
+    text-decoration: none;
+    color: $blueMirex;
+    
+    & 
+    :hover{
+        color: $textHover;
+    }
+}
+
+@media screen  and (max-width: $mobile-breakpoint){
+    *{
+        background-color: $background;
+    }
+}

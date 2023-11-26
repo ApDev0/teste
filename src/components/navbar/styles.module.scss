@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+@import '../../styles/variaveis.scss';
+
+.navBarContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem;
+    background-color: $background;
+
+
+    .logoContent{
+        cursor: pointer;
+        height: 50px;
+        width: 250px;
+        margin-left: -1.5rem;
+
+        h4{
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 1.5rem;
+            color: $blueMirex;
+            width: 15rem;
+
+            @media only screen and (min-width: $desktop-breakpoint){
+
+            }
+        }
+    }
+
+    nav{
+        display: flex;
+        position: fixed;
+        width: 100%;
+        background-color: $textHover;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(100%);
+        transition: transform .5s ease;
+
+       .navBarEnd{
+        position: fixed;
+        top: 3.5rem;
+        width: 100%;
+        background-color: $background;
+        left: 40%;
+        right: 0;
+        height: 100vh;
+        padding: 2rem;
+        font-family: 'poppins', sans-serif;
+
+
+        .navBarItem{
+            display: flex;
+            flex-direction: column;
+            background-color: $background;
+            gap: 2rem;
+            margin-top: -2rem;
+
+            & :hover{
+                color: $textHover;
+                transition: all .5s ease;
+            }
+
+            @media only screen and (min-width: $desktop-breakpoint){
+                display: flex;
+                list-style: none;
+                flex-direction: row;
+                position: relative;
+                gap: 2rem;
+                align-items: center;
+            }
+
+        }
+
+            @media only screen and (min-width: $desktop-breakpoint){
+                top: 0;
+                height: 0;
+                left: 0;
+                position: relative;
+                align-items: center;
+            }
+    }
+
+        @media only screen and (min-width: $desktop-breakpoint){
+            font-size: medium;
+            font-family: 'Poppins', sans-serif ;
+            font-weight: bold;
+            position: relative;
+            align-items: center;
+            transform: scale(1);
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .showNav{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+    .SearchArea{
+        display: flex;
+        align-items: center;
+        height: 3rem;
+        padding: .5rem;
+    }
+
+
+
+    #navBarBurguer {
+
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            cursor: pointer;
+
+                    span{
+                    width: 100%;
+                    height: 2px;
+                    background-color: $blueMirex;
+                    transition: all .3s linear;
+                }                
+        }
+
+        @media only screen and (min-width: $desktop-breakpoint){
+          display: none;
+        }
+
+    }
+
+
+
+@media only screen and (min-width: $tablet-breakpoint){
+    .navBarContent{
+        display: flex;
+        flex-direction: row;
+        background-color: $background;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+}
+}
+
+._lines{
+    max-width: 100%;
+    border: 3px solid $blueMirex;
+}

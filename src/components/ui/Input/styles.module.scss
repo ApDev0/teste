@@ -1,0 +1,31 @@
+@import '../../../styles/variaveis.scss';
+
+.input{
+    width: 18rem;
+    height: 2.5rem;
+    background-color: $background;
+    border-radius: .6rem;
+    border: 1px solid $blueMirex;
+    padding: 0 .5rem ;
+    color: $blueMirex;
+    font-size: medium;
+    font-family: 'poppins', sans-serif;
+    display: none;
+
+
+    @media only screen and (min-width: $tablet-breakpoint){
+        display: block;
+    }
+}
+
+.input::placeholder{
+    color: '#ddd';
+    font-family: 'poppins', sans-serif;
+}
+
+
+.input:focus {
+    border-color: $blueMirex;
+    outline: none;
+}
+
