@@ -88,9 +88,9 @@
             font-size: medium;
             font-family: 'Poppins', sans-serif ;
             font-weight: bold;
-            position: relative;
+            position: absolute;
             align-items: center;
-            max-width: 35%;
+            max-width: 30%;
             background-color: $background;
             justify-content: center;
             padding: 1rem;
@@ -108,6 +108,7 @@
 
 
     .SearchArea{
+        position: relative;
         display: flex;
         align-items: center;
         height: 3rem;
