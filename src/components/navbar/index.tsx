@@ -55,7 +55,7 @@ function Navbar() {
                                 {
                                     navItems.map((item, i) => {
                                         return (
-                                            <Link href={item.path}>{item.title}</Link>
+                                            <Link  key={i} href={item.path}>{item.title}</Link>
                                         )
                                     })
                                 }
