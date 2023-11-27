@@ -76,7 +76,7 @@
         }
 
             @media only screen and (min-width: $desktop-breakpoint){
-                top: 0;
+                top: 1rem;
                 height: 0;
                 left: 0;
                 position: relative;
@@ -90,6 +90,10 @@
             font-weight: bold;
             position: relative;
             align-items: center;
+            max-width: 35%;
+            background-color: $background;
+            justify-content: center;
+            padding: 1rem;
             transform: scale(1);
             opacity: 1;
             visibility: visible;
