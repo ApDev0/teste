@@ -39,11 +39,11 @@ function Navbar() {
 
 
     return (
-        <>
+        <header className={styles.HeaderContent}>
             <div className={styles.navBarContent}>
                 <div className={styles.logoContent}>
                     <Link href={'/'} rel='preload'>
-                        <Image alt='Mirex Logo' src={Logo} height={50} width={250} />
+                        <Image alt='Mirex Logo' src={Logo} height={50} width={300} />
                         <h4>Consulado Geral de Angola no Porto</h4>
                     </Link>
                 </div>
@@ -74,14 +74,13 @@ function Navbar() {
                 <div id={styles.navBarBurguer} >
                     <div onClick={handleNav} >
                         {
-                            menuOpen ? <IoMdClose size={30} /> : <IoIosMenu size={30}/>
+                            menuOpen ? <IoMdClose size={35} /> : <IoIosMenu size={35}/>
                         }
                     </div>
                 </div>
-
             </div>
             <hr className={styles._lines} />
-        </>
+        </header>
     )
 }
 

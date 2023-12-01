@@ -1,0 +1,21 @@
+@import '../../styles/variaveis.scss';
+
+.FooterContent{
+    background-color: $blueMirex;
+    padding: 1rem;
+    height: 6rem;
+    bottom: 0;
+    left: 0; /* Opcional: alinha o rodapé à esquerda da tela */
+    right: 0; /* Opcional: alinha o rodapé à direita da tela */
+    text-align: center;
+    
+
+    .LogoFooter{
+        h1{
+            background-color: $blueMirex;
+            color: $background;
+            font-family: 'poppins', sans-serif;
+        }
+    }
+
+}

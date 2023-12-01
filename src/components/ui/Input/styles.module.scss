@@ -13,9 +13,12 @@
     display: none;
 
 
-    @media only screen and (min-width: $tablet-breakpoint){
+    @media only screen and (min-width: $mobile-breakpoint){
         display: block;
+        width: 12rem;
+        margin-right: 3rem;
     }
+
 }
 
 .input::placeholder{
