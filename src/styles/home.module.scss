@@ -1,28 +1,194 @@
 @import './variaveis.scss';
 .pageContent{
-    margin: 0 1.5rem;
+    margin: 0;
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 
+    @media only screen and (min-width: $tablet-breakpoint){
+        margin: 0 5rem;
+    }
+    @media only screen and (min-width: $portatil-breakpoint){
+        margin: 0 10rem;
+    }
+    @media only screen and (min-width: $desktop-breakpoint){
+        margin: 0 20rem;
+    }
 
     .Banner{
         position: relative;
+        margin-top: -.1rem;
         width: 100%;
-        height: 15rem;
+        height: 14rem;
+        display: flex;        
+        justify-content: center;
+
+        @media only screen and (min-width: $tablet-breakpoint){
+            height: 14rem;
+        }
 
         @media only screen and (min-width: $portatil-breakpoint){
-            height: 30rem;
+            height: 19rem;
         }
 
         @media only screen and (min-width: $desktop-breakpoint){
-            height: 40rem;
+            height: 24rem;
         }
 
+        ._BannerTitulo{
+            color: $background;
+            position: fixed;
+            top: 0rem;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.363);
+
+            h4{
+                color: $background;
+                background-color: transparent;
+                margin-top: 4.5rem;
+                font-size: 1.4rem;
+                font-family: 'poppins', sans-serif;
+                font-weight: bold;
+                text-align: center;
+                }
+
+
+            @media only screen and (min-width: $tablet-breakpoint){
+                color: $background;
+                position: fixed;
+                width: 80%;
+                margin: 0 5rem;
+                font-size: 2rem;
+                font-family: 'poppins', sans-serif;
+                font-weight: bold;
+                text-align: center;
+                background-color: transparent;  
+            }
+        }
+
+
         .slide_item{
-            object-fit: cover;
+            
+            img{
+                object-fit: cover;
+
+            }
         }
     }
+
+
+    .Comunicados{
+        margin-top: .5rem;
+
+        ._lines{
+            width: 80%;
+            border: 1px solid $blueMirex;
+            margin-left: 1.5rem;
+
+            @media only screen and (min-width: $tablet-breakpoint){
+                width: 100%;
+                margin-left: 0;
+            }
+            @media only screen and (min-width: $portatil-breakpoint){
+                width: 100%;
+                margin-left: 0;
+            }
+            @media only screen and (min-width: $desktop-breakpoint){
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+
+        h3{
+            margin-left: 1.5rem;
+            margin-top: 1rem;
+            font-family: 'poppins', sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            color: $blueMirex;
+
+            @media only screen and (min-width: $desktop-breakpoint){
+                margin-left: 0;
+            }
+
+            @media only screen and (min-width: $tablet-breakpoint){
+                margin-left: 0;
+            }
+
+        }
+
+        ._CardContent{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 24.5rem;
+            width: 18rem;
+            border: 1px solid $blueMirex;
+            border-radius: .5rem;
+            margin-left: 1.5rem;
+        
+            @media only screen and (min-width: $desktop-breakpoint){
+                margin-left: 0;
+            }
+
+            @media only screen and (min-width: $tablet-breakpoint){
+                margin-left: 0;
+            }
+
+
+            .CardImage{
+                border-radius: .5rem;
+                width: 100%;
+                height: 50%;
+
+                img{
+                    border-radius:.5rem .5rem 0 0 ;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: top;
+                }
+            }
+
+            .CardBody{
+                width: 100%;
+                height: 40%;
+                background-color: $background;
+                border-radius: 0 0 .5rem .5rem;
+
+                .CardTitulo{
+                    padding: .5rem;
+                    width: 60%;
+                    color: $blueMirex;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    font-family: 'poppins', sans-serif;
+                }
+
+                .CardText{
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 5;
+                    -webkit-box-orient: vertical;
+                    text-overflow: ellipsis;
+                    padding: 0 .5rem;
+                    font-family:'poppins', sans-serif;
+                    font-size: small;
+                }
+
+                button{
+                    margin: .5rem;
+                    width: 5rem;
+
+                    a{
+                        color: $background;
+                    }
+                }
+            }
+        }
+    }
+
 
 }
 
