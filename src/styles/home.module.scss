@@ -4,35 +4,26 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-
-    @media only screen and (min-width: $tablet-breakpoint){
-        margin: 0 5rem;
-    }
-    @media only screen and (min-width: $portatil-breakpoint){
-        margin: 0 10rem;
-    }
-    @media only screen and (min-width: $desktop-breakpoint){
-        margin: 0 20rem;
-    }
-
+ 
     .Banner{
-        position: relative;
         margin-top: -.1rem;
-        width: 100%;
-        height: 14rem;
-        display: flex;        
-        justify-content: center;
 
         @media only screen and (min-width: $tablet-breakpoint){
-            height: 14rem;
+            width: 80%;
+            margin: -.5rem 5rem;
+            height: 18rem;
         }
 
         @media only screen and (min-width: $portatil-breakpoint){
             height: 19rem;
+            margin: -.5rem 6.5rem;
+            height: 18rem;
         }
 
         @media only screen and (min-width: $desktop-breakpoint){
-            height: 24rem;
+            width: 70%;
+            margin: -.5rem 18rem;
+            height: 30rem;
         }
 
         ._BannerTitulo{
@@ -41,7 +32,7 @@
             top: 0rem;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.363);
+            background-color: rgba(0, 0, 0, 0.466);
 
             h4{
                 color: $background;
@@ -51,38 +42,193 @@
                 font-family: 'poppins', sans-serif;
                 font-weight: bold;
                 text-align: center;
+
+                @media only screen and (min-width: $tablet-breakpoint){
+                    text-align: center;
+                    margin-top: 7rem;
+                    font-size: 2.5rem;
                 }
+                @media only screen and (min-width: $portatil-breakpoint){
+                    text-align: center;
+                    margin-top: 7rem;
+                    font-size: 2.5rem;
+                }
+                @media only screen and (min-width: $desktop-breakpoint){
+                    text-align: center;
+                    margin-top: 10rem;
+                    font-size: 5rem;
+                }
+            }
 
 
             @media only screen and (min-width: $tablet-breakpoint){
                 color: $background;
                 position: fixed;
-                width: 80%;
-                margin: 0 5rem;
-                font-size: 2rem;
+                display: flex;
+                justify-content: center;
                 font-family: 'poppins', sans-serif;
-                font-weight: bold;
-                text-align: center;
-                background-color: transparent;  
+                background-color: rgba(0, 0, 0, 0.466);
+            }
+
+            @media only screen and (min-width: $portatil-breakpoint){
+                color: $background;
+                position: fixed;
+                display: flex;
+                justify-content: center;
+                font-family: 'poppins', sans-serif;
+                background-color: rgba(0, 0, 0, 0.466);
+            }
+
+            @media only screen and (min-width: $desktop-breakpoint){
+                color: $background;
+                position: fixed;
+                display: flex;
+                justify-content: center;
+                font-family: 'poppins', sans-serif;
+                background-color: rgba(0, 0, 0, 0.466);
             }
         }
 
+        .sliderContent{
+            height: 100%;
 
-        .slide_item{
-            
-            img{
-                object-fit: cover;
+            .slide_item{
+                    width: 70%;
+                    height: 70%;
+                    object-fit: cover;
+                }
+            }
+
+    }
+    .wonerServices{
+        width: 100%;
+        background-color: $blueMirex;
+        margin-top: -.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        @media only screen and (min-width: $tablet-breakpoint){
+            margin: .5rem 0;
+        }
+
+        @media only screen and (min-width: $portatil-breakpoint){
+            margin-top: .5rem;
+        }
+
+        @media only screen and (min-width: $desktop-breakpoint){
+            background-color: $blueMirex;
+        }
+
+
+        .ServiceList{
+            list-style: none;           
+
+            li{
+                display: flex;
+                flex-direction: row;
+                margin: 1rem 0;
+
+                @media only screen and (min-width: $tablet-breakpoint){
+                    margin: 1rem .2rem;
+                }    
+                @media only screen and (min-width: $portatil-breakpoint){
+                    margin: 1rem .5rem;
+                }
+                @media only screen and (min-width: $desktop-breakpoint){
+                    margin: 1rem 2rem;
+                }
+        
+            }
+
+            .Icon{
+                width: 2.5rem;
+                background-color: $background;
+                border-radius: 50%;
+                height: 2.5rem;
+
+
+                .svg{
+                    margin: 9px 7.5px;
+                    color: $blueMirex;
+                }
+
 
             }
+
+            a{
+                color: $background;
+                font-family: 'poppins', sans-serif;
+                margin: 8px;
+
+                @media only screen and (min-width: $tablet-breakpoint){
+                    margin: 10px;
+                    font-size: 9px;
+                }
+
+                @media only screen and (min-width: $portatil-breakpoint){
+                    margin: 9px;
+                    font-size: 12px;
+                }
+
+                @media only screen and (min-width: $desktop-breakpoint){
+                    margin: 9px;
+                    font-size: 1rem;
+                }
+    
+
+            }
+
+            li :hover{
+                color: $textHover;
+            }
+
+            @media only screen and (min-width: $tablet-breakpoint){
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+            }
+
+            @media only screen and (min-width: $desktop-breakpoint){
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+            }
+
+            @media only screen and (min-width: $portatil-breakpoint){
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+            }
+
+
         }
+
     }
 
 
-    .Comunicados{
-        margin-top: .5rem;
+    .Noticias{
+        margin-left: .5rem;
+        width: 80%;
+        
+
+        @media only screen and (min-width: $tablet-breakpoint){
+            width: 80%;
+            margin: 0 5rem;
+        }
+        @media only screen and (min-width: $portatil-breakpoint){
+            width: 80%;
+            margin: 0 8rem;
+        }
+        @media only screen and (min-width: $desktop-breakpoint){
+            width: 80%;
+            margin: 2rem 10rem;
+        }
+
 
         ._lines{
-            width: 80%;
+            width: 100%;
             border: 1px solid $blueMirex;
             margin-left: 1.5rem;
 
@@ -118,75 +264,95 @@
 
         }
 
-        ._CardContent{
+        .Carousel_section{
+            margin: 2rem 3rem;
+            width: 100%;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            height: 24.5rem;
-            width: 18rem;
-            border: 1px solid $blueMirex;
-            border-radius: .5rem;
-            margin-left: 1.5rem;
-        
-            @media only screen and (min-width: $desktop-breakpoint){
-                margin-left: 0;
-            }
+
 
             @media only screen and (min-width: $tablet-breakpoint){
-                margin-left: 0;
+                width: 100%;
+                margin: 2rem 0;
             }
 
-
-            .CardImage{
-                border-radius: .5rem;
-                width: 100%;
-                height: 50%;
-
-                img{
-                    border-radius:.5rem .5rem 0 0 ;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    object-position: top;
-                }
-            }
-
-            .CardBody{
-                width: 100%;
-                height: 40%;
+            ._CardContent{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 24.5rem;
+                width: 18rem;
+                border: 1px solid $blueMirex;
                 background-color: $background;
-                border-radius: 0 0 .5rem .5rem;
-
-                .CardTitulo{
-                    padding: .5rem;
-                    width: 60%;
-                    color: $blueMirex;
-                    font-size: 1rem;
-                    font-weight: 600;
-                    font-family: 'poppins', sans-serif;
+                border-radius: .5rem;
+            
+                @media only screen and (min-width: $desktop-breakpoint){
+                    margin-left: 0;
                 }
 
-                .CardText{
-                    overflow: hidden;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 5;
-                    -webkit-box-orient: vertical;
-                    text-overflow: ellipsis;
-                    padding: 0 .5rem;
-                    font-family:'poppins', sans-serif;
-                    font-size: small;
+                @media only screen and (min-width: $tablet-breakpoint){
+                    margin-left: 0;
                 }
 
-                button{
-                    margin: .5rem;
-                    width: 5rem;
 
-                    a{
-                        color: $background;
+                .CardImage{
+                    border-radius: .5rem;
+                    width: 100%;
+                    height: 50%;
+
+                    img{
+                        border-radius:.5rem .5rem 0 0 ;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: top;
+                    }
+                }
+
+                .CardBody{
+                    width: 100%;
+                    height: 40%;
+                    background-color: $background;
+                    border-radius: 0 0 .5rem .5rem;
+
+                    .CardTitulo{
+                        padding: .5rem;
+                        width: 60%;
+                        color: $blueMirex;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        font-family: 'poppins', sans-serif;
+                    }
+
+                    .CardText{
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 5;
+                        -webkit-box-orient: vertical;
+                        text-overflow: ellipsis;
+                        padding: 0 .5rem;
+                        font-family:'poppins', sans-serif;
+                        font-size: small;
+                    }
+
+                    button{
+                        margin: .5rem;
+                        width: 5rem;
+
+                        a{
+                            color: $background;
+                        }
                     }
                 }
             }
+
+
+            /* Vamos testar o codigo do swiper aqui */
+  
+
         }
+
     }
 
 

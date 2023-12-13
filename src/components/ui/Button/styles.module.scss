@@ -25,6 +25,11 @@
     font-family: 'poppins', sans-serif;
     color: $background;
     background-color: transparent;
+
+    @media only screen and (min-width: $mobile-breakpoint){
+        color: $background;
+        background-color: transparent;
+        }
 }
 
 @keyframes animate{
