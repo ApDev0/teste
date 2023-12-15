@@ -129,7 +129,7 @@ export default function Home() {
         <div className={styles.Carousel_section}>
           <Swiper
             modules={[EffectCards, EffectFade]}
-            //spaceBetween={300}
+            spaceBetween={280}
             slidesPerView={slidesPerView}
             pagination={false}
             loop={true}
