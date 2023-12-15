@@ -1,10 +1,8 @@
 import { useEffect, useState } from 'react'
 import styles from '../styles/home.module.scss'
-import Head from 'next/head'
+import Head from 'next/head';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-import { EffectCards, EffectFade, Pagination, Navigation } from 'swiper/modules';
-
+import { EffectFade, EffectCards } from 'swiper/modules'
 
 import { FaPassport } from "react-icons/fa";
 import { HiOutlineIdentification } from "react-icons/hi2";
@@ -19,9 +17,9 @@ import { Button } from '@/components/ui/Button'
 import Layout from '../components/layouts/index';
 
 export default function Home() {
+
   const [swiperEffect, setSwiperEffect] = useState('fade');
   const [slidesPerView, setSlidesPerView] = useState(4);
-
 
   const data = [
     { id: '1', image: 'https://sujeitoprogramador.com/wp-content/uploads/2022/08/fullstack-blog.png', titulo: 'Um bom programador mantem a disciplina' },
@@ -29,7 +27,6 @@ export default function Home() {
     { id: '3', image: 'https://sujeitoprogramador.com/wp-content/uploads/2022/03/Frame-321.png', titulo: 'A prática leva a perfeição' },
     { id: '4', image: 'https://sujeitoprogramador.com/wp-content/uploads/2022/01/thumb-1.png', titulo: 'Ter um portfólio atrativo atrai novas oportunidades' }
   ]
-
 
   useEffect(() => {
     // Verificar o tamanho da tela e definir o efeito do Swiper
@@ -130,10 +127,12 @@ export default function Home() {
         <hr className={styles._lines} />
         <div className={styles.Carousel_section}>
           <Swiper
-            modules={[EffectCards, EffectFade, Pagination, Navigation]}
-            effect={swiperEffect}
-            loop={true}
+            modules={[EffectCards, EffectFade]}
+            spaceBetween={300}
             slidesPerView={slidesPerView}
+            pagination={false}
+            loop={true}
+            //navigation
           >
             <SwiperSlide>
               <div className={styles._CardContent}>
@@ -148,11 +147,11 @@ export default function Home() {
                     tráfico de influência e lavagem de dinheiro.
                     os seus advogados concluem que não existe, até ao momento, qualquer referência à emissão de um mandado.
                   </div>
-                  <Button>
-                    <Link href={'/'} >
-                      Ver
-                    </Link>
-                  </Button>
+                  <Link href={'/'}>
+                    <button>
+                      <p>Ver</p>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
@@ -169,11 +168,11 @@ export default function Home() {
                     tráfico de influência e lavagem de dinheiro.
                     os seus advogados concluem que não existe, até ao momento, qualquer referência à emissão de um mandado.
                   </div>
-                  <Button>
-                    <Link href={'/'} >
-                      Ver
-                    </Link>
-                  </Button>
+                  <Link href={'/'}>
+                    <button>
+                      <p>Ver</p>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
@@ -190,11 +189,11 @@ export default function Home() {
                     tráfico de influência e lavagem de dinheiro.
                     os seus advogados concluem que não existe, até ao momento, qualquer referência à emissão de um mandado.
                   </div>
-                  <Button>
-                    <Link href={'/'} >
-                      Ver
-                    </Link>
-                  </Button>
+                  <Link href={'/'}>
+                    <button>
+                      <p>Ver</p>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
@@ -211,11 +210,11 @@ export default function Home() {
                     tráfico de influência e lavagem de dinheiro.
                     os seus advogados concluem que não existe, até ao momento, qualquer referência à emissão de um mandado.
                   </div>
-                  <Button>
-                    <Link href={'/'} >
-                      Ver
-                    </Link>
-                  </Button>
+                  <Link href={'/'}>
+                    <button>
+                      <p>Ver</p>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
@@ -232,11 +231,11 @@ export default function Home() {
                     tráfico de influência e lavagem de dinheiro.
                     os seus advogados concluem que não existe, até ao momento, qualquer referência à emissão de um mandado.
                   </div>
-                  <Button>
-                    <Link href={'/'} >
-                      Ver
-                    </Link>
-                  </Button>
+                  <Link href={'/'}>
+                    <button>
+                      <p>Ver</p>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
@@ -253,11 +252,95 @@ export default function Home() {
                     tráfico de influência e lavagem de dinheiro.
                     os seus advogados concluem que não existe, até ao momento, qualquer referência à emissão de um mandado.
                   </div>
-                  <Button>
-                    <Link href={'/'} >
-                      Ver
-                    </Link>
-                  </Button>
+                  <Link href={'/'}>
+                    <button>
+                      <p>Ver</p>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles._CardContent}>
+                <div className={styles.CardImage}>
+                  <Image src={comunImage} alt='Imagem de Isabel dos santos' />
+                </div>
+                <div className={styles.CardBody}>
+                  <div className={styles.CardTitulo}>Ordem de prisão</div>
+                  <div className={styles.CardText}>
+                    Isabel Dos Santos terá prejudicado Estado angolano em mais de 200 milhões de euros.
+                    Empresária acusada de peculato, associação criminosa,
+                    tráfico de influência e lavagem de dinheiro.
+                    os seus advogados concluem que não existe, até ao momento, qualquer referência à emissão de um mandado.
+                  </div>
+                  <Link href={'/'}>
+                    <button>
+                      <p>Ver</p>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles._CardContent}>
+                <div className={styles.CardImage}>
+                  <Image src={comunImage} alt='Imagem de Isabel dos santos' />
+                </div>
+                <div className={styles.CardBody}>
+                  <div className={styles.CardTitulo}>Ordem de prisão</div>
+                  <div className={styles.CardText}>
+                    Isabel Dos Santos terá prejudicado Estado angolano em mais de 200 milhões de euros.
+                    Empresária acusada de peculato, associação criminosa,
+                    tráfico de influência e lavagem de dinheiro.
+                    os seus advogados concluem que não existe, até ao momento, qualquer referência à emissão de um mandado.
+                  </div>
+                  <Link href={'/'}>
+                    <button>
+                      <p>Ver</p>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles._CardContent}>
+                <div className={styles.CardImage}>
+                  <Image src={comunImage} alt='Imagem de Isabel dos santos' />
+                </div>
+                <div className={styles.CardBody}>
+                  <div className={styles.CardTitulo}>Ordem de prisão</div>
+                  <div className={styles.CardText}>
+                    Isabel Dos Santos terá prejudicado Estado angolano em mais de 200 milhões de euros.
+                    Empresária acusada de peculato, associação criminosa,
+                    tráfico de influência e lavagem de dinheiro.
+                    os seus advogados concluem que não existe, até ao momento, qualquer referência à emissão de um mandado.
+                  </div>
+                  <Link href={'/'}>
+                    <button>
+                      <p>Ver</p>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles._CardContent}>
+                <div className={styles.CardImage}>
+                  <Image src={comunImage} alt='Imagem de Isabel dos santos' />
+                </div>
+                <div className={styles.CardBody}>
+                  <div className={styles.CardTitulo}>Ordem de prisão</div>
+                  <div className={styles.CardText}>
+                    Isabel Dos Santos terá prejudicado Estado angolano em mais de 200 milhões de euros.
+                    Empresária acusada de peculato, associação criminosa,
+                    tráfico de influência e lavagem de dinheiro.
+                    os seus advogados concluem que não existe, até ao momento, qualquer referência à emissão de um mandado.
+                  </div>
+                  <Link href={'/'}>
+                    <button>
+                      <p>Ver</p>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
