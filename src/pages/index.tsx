@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import styles from '../styles/home.module.scss'
 import Head from 'next/head';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectFade, EffectCards } from 'swiper/modules'
+import { EffectFade, EffectCards, Pagination } from 'swiper/modules'
 
 import { FaPassport } from "react-icons/fa";
 import { HiOutlineIdentification } from "react-icons/hi2";
@@ -15,6 +15,7 @@ import Image from 'next/image'
 import comunImage from '../../public/comuncados/isabel.jpg'
 import { Button } from '@/components/ui/Button'
 import Layout from '../components/layouts/index';
+
 
 export default function Home() {
 
@@ -70,6 +71,7 @@ export default function Home() {
           navigation={false}
           autoplay={false}
           className={styles.sliderContent}
+          loop={true}
         >
           {data.map((item) => (
             <SwiperSlide key={item.id} >
@@ -127,12 +129,14 @@ export default function Home() {
         <hr className={styles._lines} />
         <div className={styles.Carousel_section}>
           <Swiper
-            modules={[EffectCards, EffectFade]}
-            spaceBetween={300}
+            modules={[EffectCards, EffectFade, Pagination]}
+            spaceBetween={50}
             slidesPerView={slidesPerView}
-            pagination={false}
+            pagination={true}
             loop={true}
-            //navigation
+            style={{
+              "height": "28rem"
+            }}
           >
             <SwiperSlide>
               <div className={styles._CardContent}>
@@ -347,6 +351,11 @@ export default function Home() {
           </Swiper>
         </div>
       </section>
-    </main>
+
+
+      <section className={styles.aboutUs}>
+
+      </section>
+    </main >
   )
 }

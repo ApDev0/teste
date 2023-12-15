@@ -215,16 +215,13 @@
         width: 80%;
 
         @media only screen and (min-width: $tablet-breakpoint) {
-            width: 80%;
             margin: 0 5rem;
         }
         @media only screen and (min-width: $portatil-breakpoint) {
-            width: 80%;
             margin: 0 8rem;
         }
         @media only screen and (min-width: $desktop-breakpoint) {
-            width: 80%;
-            margin: 2rem 10rem;
+            margin: 2rem 14rem;
         }
 
         ._lines {
@@ -241,7 +238,7 @@
                 margin-left: 0;
             }
             @media only screen and (min-width: $desktop-breakpoint) {
-                width: 100%;
+                width: 97%;
                 margin-left: 0;
             }
         }
@@ -274,6 +271,14 @@
                 width: 100%;
                 margin: 2rem 0;
             }
+            @media only screen and (min-width: $tablet-breakpoint) {
+                width: 100%;
+                margin: 2rem 0;
+            }
+            @media only screen and (min-width: $desktop-breakpoint) {
+                width: 100%;
+                margin: 2rem 0;
+            }
 
             ._CardContent {
                 display: flex;
@@ -291,6 +296,12 @@
 
                 @media only screen and (min-width: $tablet-breakpoint) {
                     margin-left: 0;
+                }
+
+                .SwiperContent{
+                    width: 100%;
+                    height: 50rem;
+                    background-color: green;
                 }
 
                 .CardImage {
@@ -336,10 +347,10 @@
                         width: 3rem;
                         background-color: $blueMirex;
                         border: 0;
-                        padding: .4rem;
+                        padding: 0.4rem;
                         color: $background;
                         border-radius: 0.5rem;
-                        margin: .5rem 1rem;
+                        margin: 0.5rem 1rem;
                         transition: filter 0.2s;
 
                         &[disabled] {
@@ -358,19 +369,23 @@
                             font-family: "poppins", sans-serif;
                             color: $background;
                             background-color: transparent;
-    
+
                             @media only screen and (min-width: $mobile-breakpoint) {
                                 color: $background;
                                 background-color: transparent;
                             }
                         }
-    
                     }
-
                 }
             }
 
             /* Vamos testar o codigo do swiper aqui */
         }
+    }
+
+
+    .aboutUs{
+        height: 50rem;
+
     }
 }
