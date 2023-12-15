@@ -69,6 +69,7 @@ export default function Home() {
           pagination={false}
           navigation={false}
           autoplay={false}
+          loop={true}
           className={styles.sliderContent}
         >
           {data.map((item) => (
