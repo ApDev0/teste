@@ -70,7 +70,6 @@ export default function Home() {
           pagination={false}
           navigation={false}
           autoplay={false}
-          loop={true}
           className={styles.sliderContent}
           loop={true}
         >
@@ -130,13 +129,8 @@ export default function Home() {
         <hr className={styles._lines} />
         <div className={styles.Carousel_section}>
           <Swiper
-<<<<<<< HEAD
             modules={[EffectCards, EffectFade, Pagination]}
             spaceBetween={50}
-=======
-            modules={[EffectCards, EffectFade]}
-            spaceBetween={280}
->>>>>>> 9e0b34a3b076d5d19b99fbd81565aab23f388052
             slidesPerView={slidesPerView}
             pagination={true}
             loop={true}
