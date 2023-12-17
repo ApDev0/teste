@@ -215,7 +215,8 @@
         width: 80%;
 
         @media only screen and (min-width: $tablet-breakpoint) {
-            margin: 0 5rem;
+            width: 85%;
+            margin: 0 3rem;
         }
         @media only screen and (min-width: $portatil-breakpoint) {
             margin: 0 8rem;
@@ -298,7 +299,7 @@
                     margin-left: 0;
                 }
 
-                .SwiperContent{
+                .SwiperContent {
                     width: 100%;
                     height: 50rem;
                     background-color: green;
@@ -344,7 +345,7 @@
                         font-size: small;
                     }
                     button {
-                        width: 3rem;
+                        width: 4rem;
                         background-color: $blueMirex;
                         border: 0;
                         padding: 0.4rem;
@@ -383,9 +384,145 @@
         }
     }
 
+    .aboutUs {
+        .TimeAtend {
+            background-color: $background;
+            border-top: 2px solid $blueMirex;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
 
-    .aboutUs{
-        height: 50rem;
+            .TimeSec {
+                text-align: center;
+                flex-direction: column;
+                height: 8rem;
 
+                h2 {
+                    margin-top: 1rem;
+                    margin-bottom: -1rem;
+                    font-family: "Poppins", sans-serif;
+                    font-size: larger;
+                }
+            }
+
+            .Horario {
+                display: flex;
+                margin: 2rem 0;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: "Poppins", sans-serif;
+                gap: 0.5rem;
+
+                h2 {
+                    margin: 0 0.5rem;
+                    font-size: small;
+                }
+
+                p {
+                    margin: 0 0.5rem;
+                }
+
+                .util {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                }
+                .fds {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    p {
+                        color: red;
+                    }
+                }
+                .feriados {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    p {
+                        color: red;
+                    }
+                }
+
+                @media only screen and (min-width: $tablet-breakpoint) {
+                    width: 20rem;               
+                }
+            }
+
+            button {
+                width: 8rem;
+                height: 2rem;
+                background-color: $blueMirex;
+                border: none;
+                padding: 0.4rem;
+                border-radius: 0.6rem;
+                color: $background;
+                font-family: "Poppins";
+                cursor: pointer;
+
+                & :hover {
+                    cursor: pointer;
+                }
+
+                @media only screen and (min-width: $desktop-breakpoint) {
+                    width: 10rem;
+                    height: 3.5rem;
+                    font-size: medium;
+                    font-weight: 600;
+                }
+            }
+
+            @media only screen and (min-width: $tablet-breakpoint) {
+                background-color: $lightGray;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                padding: 3.5rem;
+                gap: 2rem;
+            }
+
+            @media only screen and (min-width: $portatil-breakpoint) {
+                background-color: $lightGray;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                padding: 3.5rem;
+                gap: 8rem;
+            }
+
+            @media only screen and (min-width: $desktop-breakpoint) {
+                background-color: $lightGray;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                padding: 3.5rem;
+                gap: 15rem;
+            }
+        }
+
+        p {
+            font-size: smaller;
+            font-family: "poppins", sans-serif;
+            text-align: center;
+            margin: 1rem 2rem;
+
+            @media only screen and (min-width: $tablet-breakpoint) {
+                margin: .5rem 6rem;
+            }
+        }
+        @media only screen and (min-width: $tablet-breakpoint) {
+            background-color: $lightGray;
+            text-align: center;
+            justify-content: center;
+        }
     }
+
+    .Destaques{
+        height: 20rem;
+    }
+
 }

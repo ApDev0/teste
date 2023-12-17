@@ -2,24 +2,20 @@ import { useEffect, useState } from 'react'
 import styles from '../styles/home.module.scss'
 import Head from 'next/head';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectFade, EffectCards, Pagination } from 'swiper/modules'
+import { EffectFade, EffectCards, Pagination, Autoplay, Navigation } from 'swiper/modules'
 
 import { FaPassport } from "react-icons/fa";
 import { HiOutlineIdentification } from "react-icons/hi2";
 import { GiAirplaneDeparture } from "react-icons/gi";
-import { CiSearch } from "react-icons/ci";
+import { CiSearch, CiCalendarDate, CiCircleChevRight } from "react-icons/ci";
 
 import Link from 'next/link'
 import Image from 'next/image'
 
 import comunImage from '../../public/comuncados/isabel.jpg'
-import { Button } from '@/components/ui/Button'
-import Layout from '../components/layouts/index';
-
 
 export default function Home() {
 
-  const [swiperEffect, setSwiperEffect] = useState('fade');
   const [slidesPerView, setSlidesPerView] = useState(4);
 
   const data = [
@@ -35,11 +31,13 @@ export default function Home() {
       const screenWidth = window.innerWidth;
 
       if (screenWidth < 768) {
-        setSwiperEffect('cards');
         setSlidesPerView(1);
+      } else if (screenWidth < 1204) {
+        setSlidesPerView(2);
+      } else if (screenWidth < 1700) {
+        setSlidesPerView(3)
       } else {
-        setSwiperEffect('fade');
-        setSlidesPerView(4);
+        setSlidesPerView(4)
       }
 
     }
@@ -65,12 +63,11 @@ export default function Home() {
         <title>Consulado de Angola no Porto | Inicio</title>
       </Head>
       <div className={styles.Banner}>
-        <Swiper
+        <Swiper modules={[ Pagination, Navigation, Autoplay]}
           slidesPerView={1}
           pagination={false}
           navigation={false}
           autoplay={false}
-          loop={true}
           className={styles.sliderContent}
           loop={true}
         >
@@ -130,13 +127,8 @@ export default function Home() {
         <hr className={styles._lines} />
         <div className={styles.Carousel_section}>
           <Swiper
-<<<<<<< HEAD
             modules={[EffectCards, EffectFade, Pagination]}
             spaceBetween={50}
-=======
-            modules={[EffectCards, EffectFade]}
-            spaceBetween={280}
->>>>>>> 9e0b34a3b076d5d19b99fbd81565aab23f388052
             slidesPerView={slidesPerView}
             pagination={true}
             loop={true}
@@ -360,6 +352,33 @@ export default function Home() {
 
 
       <section className={styles.aboutUs}>
+        <div className={styles.TimeAtend}>
+          <div className={styles.TimeSec}>
+            <h2>Horario de atendimento</h2>
+            <CiCalendarDate size={100} />
+          </div>
+
+          <div className={styles.Horario}>
+            <div className={styles.util}>
+              <h2 >Segunda a Sexta </h2><CiCircleChevRight size={24} color={'green'} />  <p>09H30 Às 12H00</p>
+            </div>
+            <div className={styles.fds}>
+              <h2>Sabados e Domingos </h2><CiCircleChevRight size={24} color={'red'} />  <p>Encerrados</p>
+            </div>
+            <div className={styles.feriados}>
+              <h2>Feriados</h2><CiCircleChevRight size={24} color={'red'} />  <p>Encerrados</p>
+            </div>
+          </div>
+
+          <button>
+            Agendar Visita
+          </button>
+        </div>
+        <p>Por favor, para sua comodidade evite deslocar-se ao Consulado Geral sem antes verificar os requisitos necessarios para que pretenda.</p>
+      </section>
+
+
+      <section className={styles.Destaques}>
 
       </section>
     </main >
