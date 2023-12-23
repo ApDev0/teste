@@ -5,13 +5,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, EffectCards, Pagination, Autoplay, Navigation } from 'swiper/modules'
 
 import { FaPassport } from "react-icons/fa";
-import { HiOutlineIdentification } from "react-icons/hi2";
+import { HiOutlineIdentification, HiPhone } from "react-icons/hi2";
 import { GiAirplaneDeparture } from "react-icons/gi";
-import { CiSearch, CiCalendarDate, CiCircleChevRight } from "react-icons/ci";
+import { CiSearch, CiCalendarDate, CiCircleChevRight, CiLocationOn } from "react-icons/ci";
 
 import Link from 'next/link'
 import Image from 'next/image'
 
+import location from '../../public/assets/location(5).jpg'
 import comunImage from '../../public/comuncados/isabel.jpg'
 
 export default function Home() {
@@ -63,11 +64,13 @@ export default function Home() {
         <title>Consulado de Angola no Porto | Inicio</title>
       </Head>
       <div className={styles.Banner}>
-        <Swiper modules={[ Pagination, Navigation, Autoplay]}
+        <Swiper modules={[Pagination, Navigation, Autoplay]}
           slidesPerView={1}
           pagination={false}
           navigation={false}
-          autoplay={false}
+          autoplay={{
+            delay: 2000
+          }}
           className={styles.sliderContent}
           loop={true}
         >
@@ -127,10 +130,13 @@ export default function Home() {
         <hr className={styles._lines} />
         <div className={styles.Carousel_section}>
           <Swiper
-            modules={[EffectCards, EffectFade, Pagination]}
+            modules={[EffectCards, EffectFade, Pagination, Autoplay]}
             spaceBetween={50}
             slidesPerView={slidesPerView}
             pagination={true}
+            autoplay={{
+              delay: 3000
+            }}
             loop={true}
             style={{
               "height": "28rem"
@@ -374,12 +380,27 @@ export default function Home() {
             Agendar Visita
           </button>
         </div>
-        <p>Por favor, para sua comodidade evite deslocar-se ao Consulado Geral sem antes verificar os requisitos necessarios para que pretenda.</p>
+        <p>Por favor, para sua comodidade evite deslocar-se ao Consulado Geral sem antes verificar os requisitos necessarios para o serviço que pretenda.</p>
       </section>
 
 
-      <section className={styles.Destaques}>
+      <section className={styles.Location}>
+        <div className={styles.adress}>
+          <Image src={location} alt='ponto de localização do consulado' width={350} className={styles.locationImg} />
+          <CiLocationOn size={50} className={styles.svg} />
+          <h1>ENDEREÇO: RUA DOUTOR CARLOS CAL BRANDÃO <br />
+            132/138  C.P. 4050-160 PORTO</h1>
+        </div>
 
+        <div className={styles.contactos}>
+          <h3>Contactos</h3>
+          <div className={styles.numberp}>
+            <HiPhone /><p> 222 058 902 </p>
+          </div>
+          <div className={styles.numberp}>
+            <HiPhone /><p>  926 542 574 / 911 145 731 (Urgencias)</p>
+          </div>
+        </div>
       </section>
     </main >
   )

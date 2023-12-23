@@ -222,7 +222,7 @@
             margin: 0 8rem;
         }
         @media only screen and (min-width: $desktop-breakpoint) {
-            margin: 2rem 14rem;
+            margin: 2rem 10rem;
         }
 
         ._lines {
@@ -239,7 +239,7 @@
                 margin-left: 0;
             }
             @media only screen and (min-width: $desktop-breakpoint) {
-                width: 97%;
+                width: 96%;
                 margin-left: 0;
             }
         }
@@ -385,8 +385,8 @@
     }
 
     .aboutUs {
+        background-color: $lightGray;
         .TimeAtend {
-            background-color: $background;
             border-top: 2px solid $blueMirex;
             display: flex;
             align-items: center;
@@ -449,7 +449,7 @@
                 }
 
                 @media only screen and (min-width: $tablet-breakpoint) {
-                    width: 20rem;               
+                    width: 20rem;
                 }
             }
 
@@ -511,7 +511,7 @@
             margin: 1rem 2rem;
 
             @media only screen and (min-width: $tablet-breakpoint) {
-                margin: .5rem 6rem;
+                margin: 0.5rem 6rem;
             }
         }
         @media only screen and (min-width: $tablet-breakpoint) {
@@ -521,8 +521,59 @@
         }
     }
 
-    .Destaques{
-        height: 20rem;
-    }
+    .Location {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
+        .adress {
+            display: flex;
+            margin: 1rem;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: 80%;
+                object-fit: cover;
+                display: none;
+
+                @media only screen and (min-width: $tablet-breakpoint) {
+                    width: 20rem;
+                    display: flex;
+                }
+            }
+
+            svg {
+                color: red;
+            }
+
+            h1 {
+                font-size: small;
+                text-align: center;
+                font-family: "Poppins", sans-serif;
+                color: $blueMirex;
+            }
+        }
+
+        .contactos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $blueMirex;
+            h3 {
+                font-size: large;
+            }
+
+            .numberp {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                p{
+                    margin: 0 .5rem;
+                }
+            }
+        }
+    }
 }
