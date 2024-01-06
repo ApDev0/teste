@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './styles.module.scss'
 import Image from 'next/image'
 import consu from '../../../public/banner/consu.jpg'
-
+import rui from '../../../public/banner/rui.jpg'
 import Link from 'next/link'
 
 const NoticiaSection = () => {
@@ -28,7 +28,36 @@ const NoticiaSection = () => {
             </div>
             <div className={styles.bannersSecundarios}>
                 <div className={styles.banerMenor}>
-
+                    <Link href={'noticias/id=2'}>
+                        <div className={styles.bannerImage}>
+                            <Image src={rui} alt='noticias' className={styles.bannerImg} />
+                        </div>
+                        <div className={styles.BannerBody}>
+                            <div className={styles.bannerTitulo}>
+                                <h2>Morreu Rui Mingas</h2>
+                            </div>
+                            <div className={styles.bannerText}>
+                                <p>Morreu em Lisboa Ruy Mingas, antigo embaixador de Angola em Portugal,
+                                    conhecido músico da resistência angolana,
+                                    um dos autores da conhecida canção "Meninos do Huambo</p>
+                            </div>
+                        </div>
+                    </Link>
+                </div>
+                <div className={styles.banerMenor}>
+                    <div className={styles.bannerImage}>
+                        <Image src={rui} alt='noticias' className={styles.bannerImg} />
+                    </div>
+                    <div className={styles.BannerBody}>
+                        <div className={styles.bannerTitulo}>
+                            <h2>Morreu Rui Mingas</h2>
+                        </div>
+                        <div className={styles.bannerText}>
+                            <p>Morreu em Lisboa Ruy Mingas, antigo embaixador de Angola em Portugal,
+                                conhecido músico da resistência angolana,
+                                um dos autores da conhecida canção "Meninos do Huambo</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>)
