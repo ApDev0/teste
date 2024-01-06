@@ -11,7 +11,7 @@ const NoticiaSection = () => {
             <div className={styles.bannerPrincipal}>
                 <Link href={'/noticias/id=1'}>
                     <div className={styles.bannerImage}>
-                        <Image src={consu} alt='Foto de isabel dos santos do jornal de noticias' className={styles.bannerImg} />
+                        <Image src={consu} alt="Foto de isabel dos santos do jornal de noticias" className={styles.bannerImg} />
                     </div>
                     <div className={styles.BannerBody}>
                         <div className={styles.bannerTitulo}>
@@ -30,7 +30,7 @@ const NoticiaSection = () => {
                 <div className={styles.banerMenor}>
                     <Link href={'noticias/id=2'}>
                         <div className={styles.bannerImage}>
-                            <Image src={rui} alt='noticias' className={styles.bannerImg} />
+                            <Image src={rui} alt="noticias" className={styles.bannerImg} />
                         </div>
                         <div className={styles.BannerBody}>
                             <div className={styles.bannerTitulo}>
