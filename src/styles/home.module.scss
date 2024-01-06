@@ -7,6 +7,7 @@
 
     .Banner {
         width: 100%;
+        height: 100%;
         @media only screen and (min-width: $tablet-breakpoint) {
             width: 80%;
             margin: -0.5rem 5rem;
@@ -93,7 +94,7 @@
 
             .slide_item {
                 width: 70%;
-                height: 70%;
+                //height: 70%;
                 object-fit: cover;
 
                 @media only screen and (min-width: $tablet-breakpoint) {
@@ -210,184 +211,14 @@
         }
     }
 
-    .Noticias {
-        margin-left: 0.5rem;
-        width: 80%;
 
-        @media only screen and (min-width: $tablet-breakpoint) {
-            width: 85%;
-            margin: 0 3rem;
-        }
-        @media only screen and (min-width: $portatil-breakpoint) {
-            margin: 0 8rem;
-        }
-        @media only screen and (min-width: $desktop-breakpoint) {
-            margin: 2rem 10rem;
-        }
 
-        ._lines {
-            width: 100%;
-            border: 1px solid $blueMirex;
-            margin-left: 1.5rem;
-
-            @media only screen and (min-width: $tablet-breakpoint) {
-                width: 100%;
-                margin-left: 0;
-            }
-            @media only screen and (min-width: $portatil-breakpoint) {
-                width: 100%;
-                margin-left: 0;
-            }
-            @media only screen and (min-width: $desktop-breakpoint) {
-                width: 96%;
-                margin-left: 0;
-            }
-        }
-
-        h3 {
-            margin-left: 1.5rem;
-            margin-top: 1rem;
-            font-family: "poppins", sans-serif;
-            font-weight: 400;
-            font-size: 1.2rem;
-            color: $blueMirex;
-
-            @media only screen and (min-width: $desktop-breakpoint) {
-                margin-left: 0;
-            }
-
-            @media only screen and (min-width: $tablet-breakpoint) {
-                margin-left: 0;
-            }
-        }
-
-        .Carousel_section {
-            margin: 2rem 3rem;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            @media only screen and (min-width: $tablet-breakpoint) {
-                width: 100%;
-                margin: 2rem 0;
-            }
-            @media only screen and (min-width: $tablet-breakpoint) {
-                width: 100%;
-                margin: 2rem 0;
-            }
-            @media only screen and (min-width: $desktop-breakpoint) {
-                width: 100%;
-                margin: 2rem 0;
-            }
-
-            ._CardContent {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                height: 24.5rem;
-                width: 18rem;
-                border: 1px solid $blueMirex;
-                background-color: $background;
-                border-radius: 0.5rem;
-
-                @media only screen and (min-width: $desktop-breakpoint) {
-                    margin-left: 0;
-                }
-
-                @media only screen and (min-width: $tablet-breakpoint) {
-                    margin-left: 0;
-                }
-
-                .SwiperContent {
-                    width: 100%;
-                    height: 50rem;
-                    background-color: green;
-                }
-
-                .CardImage {
-                    border-radius: 0.5rem;
-                    width: 100%;
-                    height: 50%;
-
-                    img {
-                        border-radius: 0.5rem 0.5rem 0 0;
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        object-position: top;
-                    }
-                }
-
-                .CardBody {
-                    width: 100%;
-                    height: 40%;
-                    background-color: $background;
-                    border-radius: 0 0 0.5rem 0.5rem;
-
-                    .CardTitulo {
-                        padding: 0.5rem;
-                        width: 60%;
-                        color: $blueMirex;
-                        font-size: 1rem;
-                        font-weight: 600;
-                        font-family: "poppins", sans-serif;
-                    }
-
-                    .CardText {
-                        overflow: hidden;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 5;
-                        -webkit-box-orient: vertical;
-                        text-overflow: ellipsis;
-                        padding: 0 0.5rem;
-                        font-family: "poppins", sans-serif;
-                        font-size: small;
-                    }
-                    button {
-                        width: 4rem;
-                        background-color: $blueMirex;
-                        border: 0;
-                        padding: 0.4rem;
-                        color: $background;
-                        border-radius: 0.5rem;
-                        margin: 0.5rem 1rem;
-                        transition: filter 0.2s;
-
-                        &[disabled] {
-                            cursor: not-allowed;
-                            svg {
-                                animation: animate 2s infinite;
-                            }
-                        }
-
-                        &:hover {
-                            filter: brightness(1.08);
-                            cursor: pointer;
-                        }
-
-                        p {
-                            font-family: "poppins", sans-serif;
-                            color: $background;
-                            background-color: transparent;
-
-                            @media only screen and (min-width: $mobile-breakpoint) {
-                                color: $background;
-                                background-color: transparent;
-                            }
-                        }
-                    }
-                }
-            }
-
-            /* Vamos testar o codigo do swiper aqui */
-        }
-    }
+    
 
     .aboutUs {
         background-color: $lightGray;
         .TimeAtend {
-            border-top: 2px solid $blueMirex;
+            //border-top: 2px solid $blueMirex;
             display: flex;
             align-items: center;
             text-align: center;
@@ -525,6 +356,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 1rem 0;
+        border-bottom: 2px solid $blueMirex;
 
         .adress {
             display: flex;
@@ -541,6 +374,12 @@
                     width: 20rem;
                     display: flex;
                 }
+            }
+
+            @media only screen and (min-width: $desktop-breakpoint){
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 8rem;
             }
 
             svg {
@@ -560,6 +399,7 @@
             flex-direction: column;
             align-items: center;
             color: $blueMirex;
+            margin-bottom: 1rem;
             h3 {
                 font-size: large;
             }
@@ -569,11 +409,26 @@
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-
+                margin: .2
+                rem 0;
                 p{
                     margin: 0 .5rem;
                 }
             }
+
+
+            @media only screen and (min-width: $desktop-breakpoint){
+                margin-left: 8rem;
+            }
+        }
+
+        @media only screen and (min-width: $desktop-breakpoint){
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            //gap: 10rem;
         }
     }
+
+
 }

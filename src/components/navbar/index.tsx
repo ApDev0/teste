@@ -1,40 +1,33 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './styles.module.scss'
 import Image from 'next/image';
 import Logo from '../../../public/assets/mirex.png'
 import Link from 'next/link';
 import { Input } from '../ui/Input';
-import { IoIosMenu } from "react-icons/io";
-import { IoMdClose } from "react-icons/io";
-function Navbar() {
+import { IoIosMenu, IoIosArrowDown, IoMdClose, IoIosArrowUp } from "react-icons/io";
 
-    const navItems = [
-        {
-            title: "Inicio",
-            path: '/'
-        },
-        {
-            title: "Consulado",
-            path: '/consulado'
-        },
-        {
-            title: "Serviços",
-            path: '/servicos'
-        },
-        {
-            title: "Angola",
-            path: '/angola'
-        },
-        {
-            title: "Contactos",
-            path: '/contactos'
-        },
-    ]
+import items from './items';
+
+function Navbar() {
 
     const [menuOpen, setMenuOpen] = useState(false);
 
+    const [dropdownStates, setDropdownStates] = useState<{ [key: string]: boolean }>({});
+
+
+    const handleDropdownClick = (dropdownKey: string) => {
+        setDropdownStates((prevStates) => ({
+            ...prevStates,
+            [dropdownKey]: !prevStates[dropdownKey],
+        }));
+    };
+
     function handleNav() {
         setMenuOpen(!menuOpen);
+    }
+
+    function closeMenu() {
+        setMenuOpen(false)
     }
 
 
@@ -50,17 +43,37 @@ function Navbar() {
 
                 <nav className={`${styles.navBarMenu} ${menuOpen ? styles.showNav : ''} `}>
                     <div className={styles.navBarEnd}>
-                        <ul>
-                            <li className={styles.navBarItem}>
-                                {
-                                    navItems.map((item, i) => {
-                                        return (
-                                            <Link  key={i} href={item.path}>{item.title}</Link>
-                                        )
-                                    })
-                                }
-                            </li>
-                        </ul>
+                            {items.map((item, i) => (
+                                <li key={i} className={styles.navBarItem}>
+                                    {item.items ? (
+                                        <div>
+                                            <span onClick={() => handleDropdownClick(item.title)}>{item.title} {dropdownStates[item.title] ? <IoIosArrowUp /> : <IoIosArrowDown />}</span>
+                                            {dropdownStates[item.title] && (
+                                                <ul className={styles.dropdown}>
+                                                    {item.items.map((subitem, j) => (
+                                                        <li key={j}>
+                                                            <div>
+                                                                <span onClick={() => handleDropdownClick(subitem.title)}>{subitem.title} {dropdownStates[subitem.title] ? <IoIosArrowUp /> : <IoIosArrowDown />} </span>
+                                                                {dropdownStates[subitem.title] && (
+                                                                    <ul className={styles.dropdown2}>
+                                                                        {subitem.subitem?.map((subitem, sb) => (
+                                                                            <li key={sb} className={styles.subItem}>
+                                                                                <Link href={subitem.path} >{subitem.title}</Link>
+                                                                            </li>
+                                                                        ))}
+                                                                    </ul>
+                                                                )}
+                                                            </div>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            )}
+                                        </div>
+                                    ) : (
+                                        <Link href={item.path} onClick={closeMenu}>{item.title}  </Link>
+                                    )}
+                                </li>
+                            ))}
                     </div>
                 </nav>
 
@@ -74,7 +87,7 @@ function Navbar() {
                 <div id={styles.navBarBurguer} >
                     <div onClick={handleNav} >
                         {
-                            menuOpen ? <IoMdClose size={35} /> : <IoIosMenu size={35}/>
+                            menuOpen ? <IoMdClose size={35} /> : <IoIosMenu size={35} />
                         }
                     </div>
                 </div>

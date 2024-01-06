@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
-@import '../../styles/variaveis.scss';
+@import "../../styles/variaveis.scss";
 
-
-.HeaderContent{
+.HeaderContent {
     position: fixed;
     width: 100%;
     z-index: 1000;
     background-color: $background;
 
-    
-    .navBarContent{
+    .navBarContent {
         position: fixed;
         top: 0;
         width: 100%;
@@ -20,29 +18,23 @@
         background-color: $background;
         justify-content: space-between;
         padding: 1rem 0;
-    
-    
-        @media only screen and (min-width: $desktop-breakpoint){
-            position: fixed;
-            display: flex;
+
+        @media only screen and (min-width: $desktop-breakpoint) {
             flex-direction: row;
             align-items: center;
             justify-content: space-around;
         }
-    
-    
-        .logoContent{
-    
-            h4{
-                font-family: 'poppins', sans-serif;
+
+        .logoContent {
+            margin-left: 0;
+            h4 {
+                font-family: "poppins", sans-serif;
                 font-size: small;
                 margin-left: 2rem;
             }
-    
         }
-    
-    
-        .navBarMenu{
+
+        .navBarMenu {
             position: fixed;
             top: 1rem;
             width: 100%;
@@ -52,169 +44,255 @@
             transform: translateX(100%);
             opacity: 0;
             visibility: hidden;
-            transition: transform .5s ease;
+            transition: transform 0.5s ease;
             background-color: $background;
-    
-    
-    
-            @media only screen and (min-width: $tablet-breakpoint){
+
+            @media only screen and (min-width: $tablet-breakpoint) {
                 top: 2rem;
                 left: 45%;
             }
-    
-    
-            @media only screen and (min-width: $portatil-breakpoint)    {
+
+            @media only screen and (min-width: $portatil-breakpoint) {
                 position: relative;
                 height: 2rem;
-                width: 40rem;
-                align-items: center;
-                justify-content: center;
-                left: 0%;
-                top: -2.5rem;
-                justify-content: center;
-                transform: scale(1);
-                opacity: 1;
-                visibility: visible;
-               
-            }
-            
-    
-            @media only screen and (min-width: $desktop-breakpoint){
-                position: relative;
-                height: 2rem;
-                width: 35rem;
-                align-items: center;
-                justify-content: center;
-                left: 0%;
-                top: 1rem;
-                justify-content: center;
-                transform: scale(1);
-                opacity: 1;
-                visibility: visible;
-    
-            }
-    
-            .navBarEnd{
+                width: auto;
                 display: flex;
                 flex-direction: row;
-                
+                align-items: center;
+                justify-content: center;
+                top: -2rem;
+                transform: scale(1);
+                opacity: 1;
+                visibility: visible;
+            }
 
-                @media only screen and (min-width: $portatil-breakpoint){
-                    display: flex;
+            @media only screen and (min-width: $desktop-breakpoint) {
+                top: 0;
+                left: -2rem;
+                width: 30rem;
+                display: flex;
+                flex-direction: row;
+                height: auto;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .navBarEnd {
+                margin-top: 3rem;
+                display: flex;
+                flex-direction: column;
+
+                @media only screen and (min-width: $portatil-breakpoint) {
+                    width: 5rem;
+                    margin-top: 3rem;
                     flex-direction: row;
-                    //margin-top: -rem;
+                    margin-left: -25rem;
                 }
 
-                @media only screen and (min-width: $desktop-breakpoint){
+                @media only screen and (min-width: $desktop-breakpoint) {
+                    margin-top: 0;
+                    height: 4rem;
+                    margin-right: -30rem;
                     display: flex;
+                    align-items: center;
                     flex-direction: row;
-                    margin-top: -3.5rem;
+                    width: auto;
+
+                    cursor: pointer;
                 }
 
-                .navBarItem{
+                .navBarItem {
+                    width: 85%;
+                    margin: 0 1rem;
                     display: flex;
                     flex-direction: column;
-                    gap: 2rem;
-                    margin-top: 3rem;
+                    margin-top: 1rem;
                     position: relative;
                     list-style: none;
-    
-                    a{
+
+                    a {
                         margin: 0 1rem;
-                        font-family: 'poppins', sans-serif;
-                        font-weight: bold;        
-                    }
-    
-                    & :hover{
-                        color: $textHover;
-                        transition: all .5s ease;
+                        font-family: "poppins", sans-serif;
+                        font-weight: bold;
                     }
 
+                    span {
+                        margin: 0 1rem;
+                        color: $blueMirex;
+                        font-weight: 600;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
 
-                    @media only screen and (min-width: $portatil-breakpoint){
-                        display: block;
-                        position: relative;
+                    @media only screen and (min-width: $portatil-breakpoint) {
                         flex-direction: row;
-                        width: 10rem;
                         font-size: small;
-                        align-items: center;
+
+                        & :hover {
+                            color: $textHover;
+                            transition: all 0.5s ease;
+                        }
                     }
 
-
-    
-                    @media only screen and (min-width: $desktop-breakpoint){
-                        display: block;
-                        position: relative;
+                    @media only screen and (min-width: $desktop-breakpoint) {
                         flex-direction: row;
-                        width: 10rem;
                         font-size: large;
-                        align-items: center;
+                        margin-top: 0;
+                        width: 100%;
+
+                        & :hover {
+                            color: $textHover;
+                            transition: all 0.5s ease;
+                        }
                     }
-    
+
+                    .dropdown {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 0 2rem;
+                        position: relative;
+                        list-style: none;
+                        width: 22rem;
+                        border-radius: 0.5rem;
+                        cursor: pointer;
+
+                        span {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                            font-size: 14px;
+                            border-bottom: 0.5px solid rgba(128, 128, 128, 0.678);
+
+                            li {
+                                @media only screen and (min-width: $desktop-breakpoint) {
+                                    color: $background;
+                                }
+                            }
+
+                            @media only screen and (min-width: $desktop-breakpoint) {
+                                color: $background;
+                            }
+                        }
+
+                        .subItem {
+                            list-style: none;
+                            font-size: small;
+                            color: $blueMirex;
+                            margin: 0.1rem;
+                            width: 90%;
+
+                            @media only screen and (min-width: $desktop-breakpoint) {
+                                border-bottom: 0;
+                            }
+                        }
+
+                        .dropdown2 {
+                            display: flex;
+                            flex-direction: column;
+                            position: relative;
+                            list-style: none;
+                            left: 1rem;
+
+                            span {
+                                li {
+                                    @media only screen and (min-width: $desktop-breakpoint) {
+                                        color: $background;
+                                    }
+
+                                    a {
+                                        @media only screen and (min-width: $desktop-breakpoint) {
+                                            color: $background;
+                                        }
+                                    }
+                                }
+
+                                @media only screen and (min-width: $desktop-breakpoint) {
+                                    color: $background;
+                                }
+                            }
+
+                            .subItem {
+                                @media only screen and (min-width: $desktop-breakpoint) {
+                                    width: 15rem;
+                                    color: greenyellow;
+                                }
+                            }
+
+                            @media only screen and (min-width: $desktop-breakpoint) {
+                                width: auto;
+                                height: auto;
+                                padding: 0.5rem;
+                                left: 0;
+                                color: $background;
+                            }
+                        }
+
+                        @media only screen and (min-width: $portatil-breakpoint) {
+                            //display: none;
+                        }
+                        @media only screen and (min-width: $desktop-breakpoint) {
+                            position: absolute;
+                            width: auto;
+                            display: flex;
+                            flex-direction: row;
+                            background-color: $blueMirex;
+                        }
+                    }
                 }
-               
             }
-        }    
-    
-        .showNav{
+        }
+
+        #navBarBurguer {
+            margin-right: 2rem;
+            position: relative;
+            margin-top: -1.7rem;
+
+            @media only screen and (min-width: $tablet-breakpoint) {
+                top: 0.7rem;
+            }
+
+            @media only screen and (min-width: $portatil-breakpoint) {
+                display: none;
+            }
+
+            @media only screen and (min-width: $desktop-breakpoint) {
+                display: none;
+            }
+        }
+
+        .showNav {
             transform: translateX(0);
             opacity: 1;
             visibility: visible;
         }
-    
-    
-        .SearchArea{
+
+        .SearchArea {
             display: none;
-    
-    
-            @media only screen and (min-width: $tablet-breakpoint){
+
+            @media only screen and (min-width: $tablet-breakpoint) {
                 display: block;
             }
-    
-            @media only screen and (min-width: $desktop-breakpoint){
+
+            @media only screen and (min-width: $desktop-breakpoint) {
                 display: block;
             }
-    
-            Input{
-    
-                @media only screen and (min-width: $tablet-breakpoint){
+
+            Input {
+                @media only screen and (min-width: $tablet-breakpoint) {
                     width: 12rem;
                 }
-        
-    
-                @media only screen and (min-width: $desktop-breakpoint){
+
+                @media only screen and (min-width: $desktop-breakpoint) {
                     //width: 18rem;
                 }
-        
             }
-    
         }
-    
-    
-        #navBarBurguer{
-            margin-right: 2rem;
-            position: relative;
-            margin-top: -1.7rem;
-    
-            @media only screen and (min-width: $tablet-breakpoint){
-                top: .7rem;
-            }
-    
-            @media only screen and (min-width: $portatil-breakpoint){
-                display: none;
-            }
-    
-            @media only screen and (min-width: $desktop-breakpoint) {
-                display: none;
-            }
-    
-        }
-    
     }
-    ._lines{
-        margin-top: -.7rem;
+    ._lines {
+        margin-top: -0.7rem;
         width: 100%;
         border: 6px solid $blueMirex;
     }
-    
 }

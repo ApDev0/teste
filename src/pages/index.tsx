@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import styles from '../styles/home.module.scss'
 import Head from 'next/head';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectFade, EffectCards, Pagination, Autoplay, Navigation } from 'swiper/modules'
+import { Pagination, Autoplay, Navigation } from 'swiper/modules'
 
 import { FaPassport } from "react-icons/fa";
 import { HiOutlineIdentification, HiPhone } from "react-icons/hi2";
@@ -13,7 +13,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import location from '../../public/assets/location(5).jpg'
-import comunImage from '../../public/comuncados/isabel.jpg'
+
+import NoticiaSection from '@/components/NoticiasSection';
+
+import CaroselComunicados from '@/components/comunicadosCarousel';
 
 export default function Home() {
 
@@ -124,238 +127,7 @@ export default function Home() {
           </li>
         </ul>
       </div>
-
-      <section className={styles.Noticias}>
-        <h3>Noticias</h3>
-        <hr className={styles._lines} />
-        <div className={styles.Carousel_section}>
-          <Swiper
-            modules={[EffectCards, EffectFade, Pagination, Autoplay]}
-            spaceBetween={50}
-            slidesPerView={slidesPerView}
-            pagination={true}
-            autoplay={{
-              delay: 3000
-            }}
-            loop={true}
-            style={{
-              "height": "28rem"
-            }}
-          >
-            <SwiperSlide>
-              <div className={styles._CardContent}>
-                <div className={styles.CardImage}>
-                  <Image src={comunImage} alt='Imagem de Isabel dos santos' />
-                </div>
-                <div className={styles.CardBody}>
-                  <div className={styles.CardTitulo}>Ordem de prisão</div>
-                  <div className={styles.CardText}>
-                    Isabel Dos Santos terá prejudicado Estado angolano em mais de 200 milhões de euros.
-                    Empresária acusada de peculato, associação criminosa,
-                    tráfico de influência e lavagem de dinheiro.
-                    os seus advogados concluem que não existe, até ao momento, qualquer referência à emissão de um mandado.
-                  </div>
-                  <Link href={'/'}>
-                    <button>
-                      <p>Ver</p>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles._CardContent}>
-                <div className={styles.CardImage}>
-                  <Image src={comunImage} alt='Imagem de Isabel dos santos' />
-                </div>
-                <div className={styles.CardBody}>
-                  <div className={styles.CardTitulo}>Ordem de prisão</div>
-                  <div className={styles.CardText}>
-                    Isabel Dos Santos terá prejudicado Estado angolano em mais de 200 milhões de euros.
-                    Empresária acusada de peculato, associação criminosa,
-                    tráfico de influência e lavagem de dinheiro.
-                    os seus advogados concluem que não existe, até ao momento, qualquer referência à emissão de um mandado.
-                  </div>
-                  <Link href={'/'}>
-                    <button>
-                      <p>Ver</p>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles._CardContent}>
-                <div className={styles.CardImage}>
-                  <Image src={comunImage} alt='Imagem de Isabel dos santos' />
-                </div>
-                <div className={styles.CardBody}>
-                  <div className={styles.CardTitulo}>Ordem de prisão</div>
-                  <div className={styles.CardText}>
-                    Isabel Dos Santos terá prejudicado Estado angolano em mais de 200 milhões de euros.
-                    Empresária acusada de peculato, associação criminosa,
-                    tráfico de influência e lavagem de dinheiro.
-                    os seus advogados concluem que não existe, até ao momento, qualquer referência à emissão de um mandado.
-                  </div>
-                  <Link href={'/'}>
-                    <button>
-                      <p>Ver</p>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles._CardContent}>
-                <div className={styles.CardImage}>
-                  <Image src={comunImage} alt='Imagem de Isabel dos santos' />
-                </div>
-                <div className={styles.CardBody}>
-                  <div className={styles.CardTitulo}>Ordem de prisão</div>
-                  <div className={styles.CardText}>
-                    Isabel Dos Santos terá prejudicado Estado angolano em mais de 200 milhões de euros.
-                    Empresária acusada de peculato, associação criminosa,
-                    tráfico de influência e lavagem de dinheiro.
-                    os seus advogados concluem que não existe, até ao momento, qualquer referência à emissão de um mandado.
-                  </div>
-                  <Link href={'/'}>
-                    <button>
-                      <p>Ver</p>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles._CardContent}>
-                <div className={styles.CardImage}>
-                  <Image src={comunImage} alt='Imagem de Isabel dos santos' />
-                </div>
-                <div className={styles.CardBody}>
-                  <div className={styles.CardTitulo}>Ordem de prisão</div>
-                  <div className={styles.CardText}>
-                    Isabel Dos Santos terá prejudicado Estado angolano em mais de 200 milhões de euros.
-                    Empresária acusada de peculato, associação criminosa,
-                    tráfico de influência e lavagem de dinheiro.
-                    os seus advogados concluem que não existe, até ao momento, qualquer referência à emissão de um mandado.
-                  </div>
-                  <Link href={'/'}>
-                    <button>
-                      <p>Ver</p>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles._CardContent}>
-                <div className={styles.CardImage}>
-                  <Image src={comunImage} alt='Imagem de Isabel dos santos' />
-                </div>
-                <div className={styles.CardBody}>
-                  <div className={styles.CardTitulo}>Ordem de prisão</div>
-                  <div className={styles.CardText}>
-                    Isabel Dos Santos terá prejudicado Estado angolano em mais de 200 milhões de euros.
-                    Empresária acusada de peculato, associação criminosa,
-                    tráfico de influência e lavagem de dinheiro.
-                    os seus advogados concluem que não existe, até ao momento, qualquer referência à emissão de um mandado.
-                  </div>
-                  <Link href={'/'}>
-                    <button>
-                      <p>Ver</p>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles._CardContent}>
-                <div className={styles.CardImage}>
-                  <Image src={comunImage} alt='Imagem de Isabel dos santos' />
-                </div>
-                <div className={styles.CardBody}>
-                  <div className={styles.CardTitulo}>Ordem de prisão</div>
-                  <div className={styles.CardText}>
-                    Isabel Dos Santos terá prejudicado Estado angolano em mais de 200 milhões de euros.
-                    Empresária acusada de peculato, associação criminosa,
-                    tráfico de influência e lavagem de dinheiro.
-                    os seus advogados concluem que não existe, até ao momento, qualquer referência à emissão de um mandado.
-                  </div>
-                  <Link href={'/'}>
-                    <button>
-                      <p>Ver</p>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles._CardContent}>
-                <div className={styles.CardImage}>
-                  <Image src={comunImage} alt='Imagem de Isabel dos santos' />
-                </div>
-                <div className={styles.CardBody}>
-                  <div className={styles.CardTitulo}>Ordem de prisão</div>
-                  <div className={styles.CardText}>
-                    Isabel Dos Santos terá prejudicado Estado angolano em mais de 200 milhões de euros.
-                    Empresária acusada de peculato, associação criminosa,
-                    tráfico de influência e lavagem de dinheiro.
-                    os seus advogados concluem que não existe, até ao momento, qualquer referência à emissão de um mandado.
-                  </div>
-                  <Link href={'/'}>
-                    <button>
-                      <p>Ver</p>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles._CardContent}>
-                <div className={styles.CardImage}>
-                  <Image src={comunImage} alt='Imagem de Isabel dos santos' />
-                </div>
-                <div className={styles.CardBody}>
-                  <div className={styles.CardTitulo}>Ordem de prisão</div>
-                  <div className={styles.CardText}>
-                    Isabel Dos Santos terá prejudicado Estado angolano em mais de 200 milhões de euros.
-                    Empresária acusada de peculato, associação criminosa,
-                    tráfico de influência e lavagem de dinheiro.
-                    os seus advogados concluem que não existe, até ao momento, qualquer referência à emissão de um mandado.
-                  </div>
-                  <Link href={'/'}>
-                    <button>
-                      <p>Ver</p>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles._CardContent}>
-                <div className={styles.CardImage}>
-                  <Image src={comunImage} alt='Imagem de Isabel dos santos' />
-                </div>
-                <div className={styles.CardBody}>
-                  <div className={styles.CardTitulo}>Ordem de prisão</div>
-                  <div className={styles.CardText}>
-                    Isabel Dos Santos terá prejudicado Estado angolano em mais de 200 milhões de euros.
-                    Empresária acusada de peculato, associação criminosa,
-                    tráfico de influência e lavagem de dinheiro.
-                    os seus advogados concluem que não existe, até ao momento, qualquer referência à emissão de um mandado.
-                  </div>
-                  <Link href={'/'}>
-                    <button>
-                      <p>Ver</p>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </SwiperSlide>
-          </Swiper>
-        </div>
-      </section>
-
+      <CaroselComunicados />
 
       <section className={styles.aboutUs}>
         <div className={styles.TimeAtend}>
@@ -383,13 +155,17 @@ export default function Home() {
         <p>Por favor, para sua comodidade evite deslocar-se ao Consulado Geral sem antes verificar os requisitos necessarios para o serviço que pretenda.</p>
       </section>
 
+          <NoticiaSection/>
 
       <section className={styles.Location}>
         <div className={styles.adress}>
           <Image src={location} alt='ponto de localização do consulado' width={350} className={styles.locationImg} />
-          <CiLocationOn size={50} className={styles.svg} />
-          <h1>ENDEREÇO: RUA DOUTOR CARLOS CAL BRANDÃO <br />
-            132/138  C.P. 4050-160 PORTO</h1>
+          <div style={{ display: 'flex', flexDirection: 'row' }}>
+            <CiLocationOn size={50} className={styles.svg} />
+            <h1>ENDEREÇO: RUA DOUTOR CARLOS CAL BRANDÃO <br />
+              132/138  C.P. 4050-160 PORTO</h1>
+
+          </div>
         </div>
 
         <div className={styles.contactos}>
@@ -402,6 +178,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
     </main >
   )
 }
