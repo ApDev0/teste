@@ -44,9 +44,29 @@ const NoticiaSection = () => {
                                     <h2>Morreu Rui Mingas</h2>
                                 </div>
                                 <div className={styles.bannerText}>
-                                    <p>Morreu em Lisboa Ruy Mingas, antigo embaixador de Angola em Portugal,
-                                        conhecido músico da resistência angolana,
-                                        um dos autores da conhecida canção Meninos do Huambo</p>
+                                    <p>O Consulado de Angola no Porto,
+                                        apresenta o novo website consular,
+                                        onde os utentes já poderão agendar as vistas consultar os documentos que
+                                        precisam para resolver qualquer questão que tenham</p>
+                                </div>
+                            </div>
+                        </Link>
+                    </div>
+
+                    <div className={styles.banerMenor}>
+                        <Link href={'noticias/id=2'}>
+                            <div className={styles.bannerImage}>
+                                <Image src={rui} alt="noticias" className={styles.bannerImg} />
+                            </div>
+                            <div className={styles.BannerBody}>
+                                <div className={styles.bannerTitulo}>
+                                    <h2>Morreu Rui Mingas</h2>
+                                </div>
+                                <div className={styles.bannerText}>
+                                    <p>O Consulado de Angola no Porto,
+                                        apresenta o novo website consular,
+                                        onde os utentes já poderão agendar as vistas consultar os documentos que
+                                        precisam para resolver qualquer questão que tenham</p>
                                 </div>
                             </div>
                         </Link>
@@ -61,9 +81,10 @@ const NoticiaSection = () => {
                                     <h2>Morreu Rui Mingas</h2>
                                 </div>
                                 <div className={styles.bannerText}>
-                                    <p>Morreu em Lisboa Ruy Mingas, antigo embaixador de Angola em Portugal,
-                                        conhecido músico da resistência angolana,
-                                        um dos autores da conhecida canção Meninos do Huambo</p>
+                                    <p>O Consulado de Angola no Porto,
+                                        apresenta o novo website consular,
+                                        onde os utentes já poderão agendar as vistas consultar os documentos que
+                                        precisam para resolver qualquer questão que tenham</p>
                                 </div>
                             </div>
                         </Link>
@@ -78,9 +99,10 @@ const NoticiaSection = () => {
                                     <h2>Morreu Rui Mingas</h2>
                                 </div>
                                 <div className={styles.bannerText}>
-                                    <p>Morreu em Lisboa Ruy Mingas, antigo embaixador de Angola em Portugal,
-                                        conhecido músico da resistência angolana,
-                                        um dos autores da conhecida canção Meninos do Huambo</p>
+                                    <p>O Consulado de Angola no Porto,
+                                        apresenta o novo website consular,
+                                        onde os utentes já poderão agendar as vistas consultar os documentos que
+                                        precisam para resolver qualquer questão que tenham</p>
                                 </div>
                             </div>
                         </Link>
@@ -95,9 +117,10 @@ const NoticiaSection = () => {
                                     <h2>Morreu Rui Mingas</h2>
                                 </div>
                                 <div className={styles.bannerText}>
-                                    <p>Morreu em Lisboa Ruy Mingas, antigo embaixador de Angola em Portugal,
-                                        conhecido músico da resistência angolana,
-                                        um dos autores da conhecida canção Meninos do Huambo</p>
+                                    <p>O Consulado de Angola no Porto,
+                                        apresenta o novo website consular,
+                                        onde os utentes já poderão agendar as vistas consultar os documentos que
+                                        precisam para resolver qualquer questão que tenham</p>
                                 </div>
                             </div>
                         </Link>
@@ -112,26 +135,10 @@ const NoticiaSection = () => {
                                     <h2>Morreu Rui Mingas</h2>
                                 </div>
                                 <div className={styles.bannerText}>
-                                    <p>Morreu em Lisboa Ruy Mingas, antigo embaixador de Angola em Portugal,
-                                        conhecido músico da resistência angolana,
-                                        um dos autores da conhecida canção Meninos do Huambo</p>
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className={styles.banerMenor}>
-                        <Link href={'noticias/id=2'}>
-                            <div className={styles.bannerImage}>
-                                <Image src={rui} alt="noticias" className={styles.bannerImg} />
-                            </div>
-                            <div className={styles.BannerBody}>
-                                <div className={styles.bannerTitulo}>
-                                    <h2>Morreu Rui Mingas</h2>
-                                </div>
-                                <div className={styles.bannerText}>
-                                    <p>Morreu em Lisboa Ruy Mingas, antigo embaixador de Angola em Portugal,
-                                        conhecido músico da resistência angolana,
-                                        um dos autores da conhecida canção Meninos do Huambo</p>
+                                    <p>O Consulado de Angola no Porto,
+                                        apresenta o novo website consular,
+                                        onde os utentes já poderão agendar as vistas consultar os documentos que
+                                        precisam para resolver qualquer questão que tenham</p>
                                 </div>
                             </div>
                         </Link>
