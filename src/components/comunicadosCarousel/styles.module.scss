@@ -18,7 +18,7 @@
     ._lines {
         width: 100%;
         border: 1px solid $blueMirex;
-        margin-left: 1.5rem;
+        margin-left: 0;
 
         @media only screen and (min-width: $tablet-breakpoint) {
             width: 100%;
@@ -35,7 +35,7 @@
     }
 
     h3 {
-        margin-left: 1.5rem;
+        margin-left: .1rem;
         margin-top: 1rem;
         font-family: "poppins", sans-serif;
         font-weight: 400;
@@ -51,8 +51,9 @@
         }
     }
     .Carousel_section {
-        margin: 2rem 3rem;
-        width: 100%;
+        margin: 2rem 0;
+        margin-left: 1rem;
+        max-width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;

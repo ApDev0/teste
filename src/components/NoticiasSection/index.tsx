@@ -71,6 +71,7 @@ const NoticiaSection = () => {
                             </div>
                         </Link>
                     </div>
+
                     <div className={styles.banerMenor}>
                         <Link href={'noticias/id=2'}>
                             <div className={styles.bannerImage}>
@@ -89,6 +90,7 @@ const NoticiaSection = () => {
                             </div>
                         </Link>
                     </div>
+                    
                     <div className={styles.banerMenor}>
                         <Link href={'noticias/id=2'}>
                             <div className={styles.bannerImage}>
@@ -107,42 +109,7 @@ const NoticiaSection = () => {
                             </div>
                         </Link>
                     </div>
-                    <div className={styles.banerMenor}>
-                        <Link href={'noticias/id=2'}>
-                            <div className={styles.bannerImage}>
-                                <Image src={rui} alt="noticias" className={styles.bannerImg} />
-                            </div>
-                            <div className={styles.BannerBody}>
-                                <div className={styles.bannerTitulo}>
-                                    <h2>Morreu Rui Mingas</h2>
-                                </div>
-                                <div className={styles.bannerText}>
-                                    <p>O Consulado de Angola no Porto,
-                                        apresenta o novo website consular,
-                                        onde os utentes já poderão agendar as vistas consultar os documentos que
-                                        precisam para resolver qualquer questão que tenham</p>
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className={styles.banerMenor}>
-                        <Link href={'noticias/id=2'}>
-                            <div className={styles.bannerImage}>
-                                <Image src={rui} alt="noticias" className={styles.bannerImg} />
-                            </div>
-                            <div className={styles.BannerBody}>
-                                <div className={styles.bannerTitulo}>
-                                    <h2>Morreu Rui Mingas</h2>
-                                </div>
-                                <div className={styles.bannerText}>
-                                    <p>O Consulado de Angola no Porto,
-                                        apresenta o novo website consular,
-                                        onde os utentes já poderão agendar as vistas consultar os documentos que
-                                        precisam para resolver qualquer questão que tenham</p>
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
+
                 </div>
             </div>
 

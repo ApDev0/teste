@@ -34,7 +34,8 @@
             }
             @media only screen and (min-width: $desktop-breakpoint) {
                 width: 60%;
-                margin-left: -4%;
+                padding: 0 1rem;
+                margin-left: -28rem;
             }
 
 
@@ -43,6 +44,8 @@
         ._lines {
             width: 90%;
             border: 1px solid $blueMirex;
+
+            
     
             @media only screen and (min-width: $tablet-breakpoint) {
                 width: 100%;
@@ -53,8 +56,7 @@
                 margin-left: 0;
             }
             @media only screen and (min-width: $desktop-breakpoint) {
-                width: 62%;
-                margin-left: -3.5rem;
+                width: 75rem;
             }
         }
     
@@ -71,9 +73,9 @@
             display: flex;
             flex-direction: column;
             box-sizing: border-box;
-            width: 25rem;
-            height: 15rem;
-            margin: 2rem 0.5rem;
+            width: 22rem;
+            height: 13rem;
+            margin: 2rem 1rem;
             margin-bottom: 20px;
             border: 1px solid $blueMirex;
             border-radius: 0.5rem;
@@ -149,7 +151,8 @@
             //display: flex;
             display: grid;
             grid-template-columns: auto auto;
-            gap: 1rem 0;
+            gap: 1.8rem 0;
+            
 
             .banerMenor {
                 position: relative; /* Adicionado para posicionar corretamente .BannerBody */
@@ -157,15 +160,15 @@
                 flex-direction: column;
                 box-sizing: border-box;
                 margin: 0 1rem;
-                height: 12rem;
-                width: 11rem;
+                height: 11rem;
+                width: 10rem;
                 border: 1px solid $blueMirex;
                 border-radius: 0.5rem;
                 overflow: hidden;
 
                 @media only screen and (min-width: $desktop-breakpoint) {
-                    height: 12rem;
-                    width: 15rem;
+                    height: 14rem;
+                    width: 22rem;
                 }
 
                 .bannerImage {
@@ -173,8 +176,8 @@
                     width: 11rem;
 
                     @media only screen and (min-width: $desktop-breakpoint) {
-                        height: 12rem;
-                        width: 15rem;
+                        height: 14rem;
+                        width: 22rem;
                     }
 
                     img {
@@ -216,7 +219,7 @@
 
             @media only screen and (min-width: $desktop-breakpoint) {
                 display: grid;
-                grid-template-columns: auto auto auto;
+                grid-template-columns: auto auto;
                 padding: 2rem;
 
             }
