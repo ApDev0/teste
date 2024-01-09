@@ -233,7 +233,11 @@
                     margin-top: 1rem;
                     margin-bottom: -1rem;
                     font-family: "Poppins", sans-serif;
-                    font-size: larger;
+                    font-size: medium;
+
+                    @media only screen and (min-width: $tablet-breakpoint){
+                        font-size: larger;
+                    }
                 }
             }
 
@@ -249,6 +253,10 @@
                 h2 {
                     margin: 0 0.5rem;
                     font-size: small;
+
+                    @media only screen and (min-width: $tablet-breakpoint){
+                        font-size: medium;
+                    }
                 }
 
                 p {
@@ -280,7 +288,8 @@
                 }
 
                 @media only screen and (min-width: $tablet-breakpoint) {
-                    width: 20rem;
+                    width: 25rem;
+                    font-size: medium;
                 }
             }
 
@@ -342,6 +351,7 @@
             margin: 1rem 2rem;
 
             @media only screen and (min-width: $tablet-breakpoint) {
+                font-size: large;
                 margin: 0.5rem 6rem;
             }
         }
@@ -357,7 +367,7 @@
         flex-direction: column;
         align-items: center;
         margin: 1rem 0;
-        border-bottom: 2px solid $blueMirex;
+        border-top: 2px solid $blueMirex;
 
         .adress {
             display: flex;
