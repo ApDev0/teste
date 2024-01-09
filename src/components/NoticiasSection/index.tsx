@@ -46,7 +46,7 @@ const NoticiaSection = () => {
                                 <div className={styles.bannerText}>
                                     <p>Morreu em Lisboa Ruy Mingas, antigo embaixador de Angola em Portugal,
                                         conhecido músico da resistência angolana,
-                                        um dos autores da conhecida canção "Meninos do Huambo"</p>
+                                        um dos autores da conhecida canção Meninos do Huambo</p>
                                 </div>
                             </div>
                         </Link>
@@ -63,7 +63,7 @@ const NoticiaSection = () => {
                                 <div className={styles.bannerText}>
                                     <p>Morreu em Lisboa Ruy Mingas, antigo embaixador de Angola em Portugal,
                                         conhecido músico da resistência angolana,
-                                        um dos autores da conhecida canção "Meninos do Huambo"</p>
+                                        um dos autores da conhecida canção Meninos do Huambo</p>
                                 </div>
                             </div>
                         </Link>
@@ -80,7 +80,7 @@ const NoticiaSection = () => {
                                 <div className={styles.bannerText}>
                                     <p>Morreu em Lisboa Ruy Mingas, antigo embaixador de Angola em Portugal,
                                         conhecido músico da resistência angolana,
-                                        um dos autores da conhecida canção "Meninos do Huambo"</p>
+                                        um dos autores da conhecida canção Meninos do Huambo</p>
                                 </div>
                             </div>
                         </Link>
@@ -97,7 +97,7 @@ const NoticiaSection = () => {
                                 <div className={styles.bannerText}>
                                     <p>Morreu em Lisboa Ruy Mingas, antigo embaixador de Angola em Portugal,
                                         conhecido músico da resistência angolana,
-                                        um dos autores da conhecida canção "Meninos do Huambo"</p>
+                                        um dos autores da conhecida canção Meninos do Huambo</p>
                                 </div>
                             </div>
                         </Link>
@@ -114,7 +114,7 @@ const NoticiaSection = () => {
                                 <div className={styles.bannerText}>
                                     <p>Morreu em Lisboa Ruy Mingas, antigo embaixador de Angola em Portugal,
                                         conhecido músico da resistência angolana,
-                                        um dos autores da conhecida canção "Meninos do Huambo"</p>
+                                        um dos autores da conhecida canção Meninos do Huambo</p>
                                 </div>
                             </div>
                         </Link>
@@ -131,7 +131,7 @@ const NoticiaSection = () => {
                                 <div className={styles.bannerText}>
                                     <p>Morreu em Lisboa Ruy Mingas, antigo embaixador de Angola em Portugal,
                                         conhecido músico da resistência angolana,
-                                        um dos autores da conhecida canção "Meninos do Huambo"</p>
+                                        um dos autores da conhecida canção Meninos do Huambo</p>
                                 </div>
                             </div>
                         </Link>
