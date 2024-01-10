@@ -58,9 +58,7 @@ function CaroselComunicados() {
                             delay: 3000
                         }}
                         loop={true}
-                        style={{
-                            "height": "28rem"
-                        }}
+                        className={styles.sliderStyle}
                     >
                         <SwiperSlide>
                             <div className={styles._CardContent}>

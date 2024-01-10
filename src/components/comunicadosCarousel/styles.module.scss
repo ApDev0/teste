@@ -1,22 +1,27 @@
 @import "../../styles/variaveis.scss";
 
 .Noticias {
-    margin-left: 0.5rem;
-    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
     @media only screen and (min-width: $tablet-breakpoint) {
         width: 85%;
         margin: 0 3rem;
     }
+
     @media only screen and (min-width: $portatil-breakpoint) {
         margin: 0 8rem;
     }
+
     @media only screen and (min-width: $desktop-breakpoint) {
         margin: 2rem 10rem;
     }
 
     ._lines {
-        width: 100%;
+        width: 80%;
         border: 1px solid $blueMirex;
         margin-left: 0;
 
@@ -24,10 +29,12 @@
             width: 100%;
             margin-left: 0;
         }
+
         @media only screen and (min-width: $portatil-breakpoint) {
             width: 100%;
             margin-left: 0;
         }
+
         @media only screen and (min-width: $desktop-breakpoint) {
             width: 96%;
             margin-left: 0;
@@ -35,7 +42,7 @@
     }
 
     h3 {
-        margin-left: .1rem;
+        margin-left: -9rem;
         margin-top: 1rem;
         font-family: "poppins", sans-serif;
         font-weight: 400;
@@ -50,10 +57,10 @@
             margin-left: 0;
         }
     }
+
     .Carousel_section {
-        margin: 2rem 0;
-        margin-left: 1rem;
-        max-width: 100%;
+        margin: 2rem;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -62,13 +69,24 @@
             width: 100%;
             margin: 2rem 0;
         }
+
         @media only screen and (min-width: $tablet-breakpoint) {
             width: 100%;
             margin: 2rem 0;
         }
+
         @media only screen and (min-width: $desktop-breakpoint) {
             width: 100%;
             margin: 2rem 0;
+        }
+
+        .sliderStyle {
+            margin-left: 4.5rem;
+            height: 28rem;
+
+            @media only screen and (min-width: $portatil-breakpoint) {
+                margin-left: 5rem;
+            }
         }
 
         ._CardContent {
@@ -134,6 +152,7 @@
                     font-family: "poppins", sans-serif;
                     font-size: small;
                 }
+
                 button {
                     width: 4rem;
                     background-color: $blueMirex;
@@ -146,6 +165,7 @@
 
                     &[disabled] {
                         cursor: not-allowed;
+
                         svg {
                             animation: animate 2s infinite;
                         }
@@ -170,5 +190,6 @@
             }
         }
     }
+
     /* Vamos testar o codigo do swiper aqui */
 }

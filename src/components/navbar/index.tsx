@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from './styles.module.scss'
 import Image from 'next/image';
-import Logo from '../../../public/assets/mirex.png'
+import Logo from '../../../public/assets/mirexLogo1.jpg'
 import Link from 'next/link';
 import { Input } from '../ui/Input';
 import { IoIosMenu, IoIosArrowDown, IoMdClose, IoIosArrowUp } from "react-icons/io";
@@ -36,7 +36,7 @@ function Navbar() {
             <div className={styles.navBarContent}>
                 <div className={styles.logoContent}>
                     <Link href={'/'} rel='preload'>
-                        <Image alt='Mirex Logo' src={Logo} height={50} width={300} />
+                        <Image alt='Mirex Logo' src={Logo} className={styles.navImg}/>
                         <h4>Consulado Geral de Angola no Porto</h4>
                     </Link>
                 </div>
