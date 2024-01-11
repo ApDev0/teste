@@ -11,7 +11,7 @@ import items from './items';
 function Navbar() {
 
     const [menuOpen, setMenuOpen] = useState(false);
-
+    //const [dropDownContent, setDropDownContent] = useState(false);  
     const [dropdownStates, setDropdownStates] = useState<{ [key: string]: boolean }>({});
 
 
@@ -57,7 +57,7 @@ function Navbar() {
                                                                 {dropdownStates[subitem.title] && (
                                                                     <ul className={styles.dropdown2}>
                                                                         {subitem.subitem?.map((subitem, sb) => (
-                                                                            <li key={sb} className={styles.subItem}>
+                                                                            <li key={sb} className={styles.subItem}>    
                                                                                 <Link href={subitem.path} >{subitem.title}</Link>
                                                                             </li>
                                                                         ))}
