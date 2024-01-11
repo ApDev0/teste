@@ -69,7 +69,7 @@ function CaroselComunicados() {
                                     <div className={styles.CardTitulo}>Ordem de prisão</div>
                                     <div className={styles.CardText}>
                                         <p>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                                            Angola, localizada na costa oeste da África, é uma nação rica em diversidade cultural e recursos naturais. Com uma história marcada por influências coloniais e uma luta pela independência, o país emergiu como uma nação vibrante e resiliente. Sua capital, Luanda, é um centro pulsante de atividade.
                                         </p>
                                     </div>
                                     <Link href={'/'}>
@@ -89,7 +89,7 @@ function CaroselComunicados() {
                                     <div className={styles.CardTitulo}>Ordem de prisão</div>
                                     <div className={styles.CardText}>
                                         <p>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                                            Angola, localizada na costa oeste da África, é uma nação rica em diversidade cultural e recursos naturais. Com uma história marcada por influências coloniais e uma luta pela independência, o país emergiu como uma nação vibrante e resiliente. Sua capital, Luanda, é um centro pulsante de atividade.
                                         </p>
                                     </div>
                                     <Link href={'/'}>
@@ -99,8 +99,7 @@ function CaroselComunicados() {
                                     </Link>
                                 </div>
                             </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
+                        </SwiperSlide>                        <SwiperSlide>
                             <div className={styles._CardContent}>
                                 <div className={styles.CardImage}>
                                     <Image src={comunImage} alt='Imagem de Isabel dos santos' />
@@ -109,7 +108,7 @@ function CaroselComunicados() {
                                     <div className={styles.CardTitulo}>Ordem de prisão</div>
                                     <div className={styles.CardText}>
                                         <p>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                                            Angola, localizada na costa oeste da África, é uma nação rica em diversidade cultural e recursos naturais. Com uma história marcada por influências coloniais e uma luta pela independência, o país emergiu como uma nação vibrante e resiliente. Sua capital, Luanda, é um centro pulsante de atividade.
                                         </p>
                                     </div>
                                     <Link href={'/'}>
@@ -119,8 +118,7 @@ function CaroselComunicados() {
                                     </Link>
                                 </div>
                             </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
+                        </SwiperSlide>                        <SwiperSlide>
                             <div className={styles._CardContent}>
                                 <div className={styles.CardImage}>
                                     <Image src={comunImage} alt='Imagem de Isabel dos santos' />
@@ -129,7 +127,7 @@ function CaroselComunicados() {
                                     <div className={styles.CardTitulo}>Ordem de prisão</div>
                                     <div className={styles.CardText}>
                                         <p>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                                            Angola, localizada na costa oeste da África, é uma nação rica em diversidade cultural e recursos naturais. Com uma história marcada por influências coloniais e uma luta pela independência, o país emergiu como uma nação vibrante e resiliente. Sua capital, Luanda, é um centro pulsante de atividade.
                                         </p>
                                     </div>
                                     <Link href={'/'}>
@@ -139,8 +137,7 @@ function CaroselComunicados() {
                                     </Link>
                                 </div>
                             </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
+                        </SwiperSlide>                        <SwiperSlide>
                             <div className={styles._CardContent}>
                                 <div className={styles.CardImage}>
                                     <Image src={comunImage} alt='Imagem de Isabel dos santos' />
@@ -149,47 +146,7 @@ function CaroselComunicados() {
                                     <div className={styles.CardTitulo}>Ordem de prisão</div>
                                     <div className={styles.CardText}>
                                         <p>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                                        </p>
-                                    </div>
-                                    <Link href={'/'}>
-                                        <button>
-                                            <p>Ver</p>
-                                        </button>
-                                    </Link>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className={styles._CardContent}>
-                                <div className={styles.CardImage}>
-                                    <Image src={comunImage} alt='Imagem de Isabel dos santos' />
-                                </div>
-                                <div className={styles.CardBody}>
-                                    <div className={styles.CardTitulo}>Ordem de prisão</div>
-                                    <div className={styles.CardText}>
-                                        <p>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                                        </p>
-                                    </div>
-                                    <Link href={'/'}>
-                                        <button>
-                                            <p>Ver</p>
-                                        </button>
-                                    </Link>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className={styles._CardContent}>
-                                <div className={styles.CardImage}>
-                                    <Image src={comunImage} alt='Imagem de Isabel dos santos' />
-                                </div>
-                                <div className={styles.CardBody}>
-                                    <div className={styles.CardTitulo}>Ordem de prisão</div>
-                                    <div className={styles.CardText}>
-                                        <p>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                                            Angola, localizada na costa oeste da África, é uma nação rica em diversidade cultural e recursos naturais. Com uma história marcada por influências coloniais e uma luta pela independência, o país emergiu como uma nação vibrante e resiliente. Sua capital, Luanda, é um centro pulsante de atividade.
                                         </p>
                                     </div>
                                     <Link href={'/'}>
