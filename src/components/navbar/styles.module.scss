@@ -128,7 +128,7 @@
                         font-weight: bold;
                         font-size: large;
                         padding: 0 .5rem;
-                        border-bottom: 1px solid $black;
+                        border-bottom: .5px solid $lightGray;
                         width: 100%;
 
                         @media only screen and (min-width: $portatil-breakpoint) {
@@ -145,7 +145,7 @@
                         align-items: center;
                         //justify-content: center;
                         padding: 0 .9rem;
-                        border-bottom: 1px solid $black;
+                        border-bottom: .5px solid $lightGray;
                         width: 100%;
 
                         @media only screen and (min-width: $portatil-breakpoint) {
@@ -194,8 +194,9 @@
                             justify-content: space-between;
                             align-items: center;
                             font-size: 1rem;
+                            margin: .3rem 0;
                             //border: none;
-                            border-bottom: 1px solid $black;
+                            border-bottom: .5px solid $lightGray;
 
                             li {
                                 @media only screen and (min-width: $desktop-breakpoint) {

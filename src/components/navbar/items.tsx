@@ -11,23 +11,23 @@ const items = [
         items: [
             {
                 title: "Sobre",
-                path: "#",
+                path: "/consulado/#",
                 subitem: [
                     {
                         title: 'O nosso comprimisso',
-                        path: '/consulado/comprimisso',
+                        path: '/consulado/#compromisso',
                     },
                     {
                         title: 'Equipa',
-                        path: '/consulado/equipa',
+                        path: '/consulado/#equipa',
                     },
                     {
                         title: 'Horário',
-                        path: '/consulado/horario',
+                        path: '/consulado/#horario',
                     },
                     {
                         title: 'Comunidade',
-                        path: '/consulado/comunicade',
+                        path: '/consulado/#comunicade',
                     },
                 ]
             }

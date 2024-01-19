@@ -1,0 +1,39 @@
+@import "../../styles/variaveis.scss";
+
+
+.ConsuSection {
+
+    margin: 0 7rem;
+
+    .breadCrumb {
+        display: none;
+
+        @media only screen and (min-width: $portatil-breakpoint) {
+            display: flex;
+            width: auto;
+            padding: 2rem 0;
+            color: $blueMirex;
+        }
+
+        a {
+            border-bottom: 2px solid $lightGray;
+        }
+    }
+
+    #compromisso {
+        font-size: small;
+   
+        h3{
+            font-weight: 300;
+        }
+
+        p{
+            margin: 1rem 0;
+        }
+
+        span{
+            font-weight: bold;
+        }
+    }
+
+}
