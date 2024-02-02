@@ -2,11 +2,10 @@
 
 
 .ConsuSection {
-
-    margin: 0 7rem;
+    margin: 1em 2rem;
 
     .breadCrumb {
-        display: none;
+        //display: none;
 
         @media only screen and (min-width: $portatil-breakpoint) {
             display: flex;
@@ -22,9 +21,14 @@
 
     #compromisso {
         font-size: small;
+        margin-top: 2rem;
    
         h3{
             font-weight: 300;
+        }
+        h2 {
+            font-weight: bold;
+            font-size: medium;
         }
 
         p{

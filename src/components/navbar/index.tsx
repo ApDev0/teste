@@ -58,7 +58,7 @@ function Navbar() {
                                                                     <ul className={styles.dropdown2}>
                                                                         {subitem.subitem?.map((subitem, sb) => (
                                                                             <li key={sb} className={styles.subItem}>    
-                                                                                <Link href={subitem.path} >{subitem.title}</Link>
+                                                                                <Link href={subitem.path} onClick={closeMenu} >{subitem.title}</Link>
                                                                             </li>
                                                                         ))}
                                                                     </ul>

@@ -17,47 +17,9 @@ import location from '../../public/assets/location(5).jpg'
 import NoticiaSection from '@/components/NoticiasSection';
 
 import CaroselComunicados from '@/components/comunicadosCarousel';
+import Banner from '@/components/banner';
 
 export default function Home() {
-
-  const [slidesPerView, setSlidesPerView] = useState(4);
-
-  const data = [
-    { id: '1', image: 'https://sujeitoprogramador.com/wp-content/uploads/2022/08/fullstack-blog.png', titulo: 'Um bom programador mantem a disciplina' },
-    { id: '2', image: 'https://sujeitoprogramador.com/wp-content/uploads/2022/08/home.png', titulo: 'As reuniões são igualmente importantes' },
-    { id: '3', image: 'https://sujeitoprogramador.com/wp-content/uploads/2022/03/Frame-321.png', titulo: 'A prática leva a perfeição' },
-    { id: '4', image: 'https://sujeitoprogramador.com/wp-content/uploads/2022/01/thumb-1.png', titulo: 'Ter um portfólio atrativo atrai novas oportunidades' }
-  ]
-
-  useEffect(() => {
-    // Verificar o tamanho da tela e definir o efeito do Swiper
-    function handleResize() {
-      const screenWidth = window.innerWidth;
-
-      if (screenWidth < 768) {
-        setSlidesPerView(1);
-      } else if (screenWidth < 1204) {
-        setSlidesPerView(2);
-      } else if (screenWidth < 1700) {
-        setSlidesPerView(3)
-      } else {
-        setSlidesPerView(4)
-      }
-
-    }
-
-
-    // Adicionar um ouvinte de redimensionamento
-    window.addEventListener('resize', handleResize);
-
-    // Executar a verificação inicial
-    handleResize();
-
-    // Remover o ouvinte de redimensionamento ao desmontar o componente
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
 
 
@@ -66,39 +28,7 @@ export default function Home() {
       <Head>
         <title>Consulado de Angola no Porto | Inicio</title>
       </Head>
-      <div className={styles.Banner}>
-        <Swiper modules={[Pagination, Navigation, Autoplay]}
-          slidesPerView={1}
-          pagination={false}
-          navigation={false}
-          autoplay={{
-            delay: 2000
-          }}
-          className={styles.sliderContent}
-          loop={true}
-        >
-          {data.map((item) => (
-            <SwiperSlide key={item.id} >
-              <Image
-                src={item.image}
-                alt='slider'
-                width={80}
-                height={80}
-                layout='responsive'
-                priority={true}
-                rel='preload'
-                className={styles.slide_item}
-              />
-              <div className={styles._BannerTitulo}>
-                <h4>
-                  {item.titulo}
-                </h4>
-              </div>
-            </SwiperSlide>
-          ))
-          }
-        </Swiper>
-      </div>
+      <Banner />
       <div className={styles.wonerServices}>
         <ul className={styles.ServiceList}>
           <li>
@@ -155,7 +85,7 @@ export default function Home() {
         <p>Por favor, para sua comodidade evite deslocar-se ao Consulado Geral sem antes verificar os requisitos necessarios para o serviço que pretenda.</p>
       </section>
 
-          <NoticiaSection/>
+      <NoticiaSection />
 
       <section className={styles.Location}>
         <div className={styles.adress}>
