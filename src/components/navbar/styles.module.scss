@@ -193,7 +193,7 @@
                             flex-direction: row;
                             justify-content: space-between;
                             align-items: center;
-                            font-size: 1rem;
+                            font-size: medium;
                             margin: .3rem 0;
                             //border: none;
                             border-bottom: .5px solid $lightGray;
@@ -213,7 +213,7 @@
                             }
                         }
 
-                        ul{
+                        ul {
                             color: $background
                         }
 
@@ -235,6 +235,7 @@
                             position: relative;
                             list-style: none;
                             width: 22rem;
+                            font-size: medium;
 
                             span {
 
@@ -244,6 +245,7 @@
                                     }
 
                                     a {
+
                                         @media only screen and (min-width: $desktop-breakpoint) {
                                             color: $background;
                                         }
@@ -256,14 +258,15 @@
                             }
 
                             .subItem {
-                                width: 100%;
+                                width: 25rem;
+                                font-size: medium;
 
                                 a {
-                                    font-size: .8rem;
+                                    font-size: medium;
                                     border: none;
                                     margin-left: 1rem;
-                                    
-                                    @media only screen and (min-width: $portatil-breakpoint){
+
+                                    @media only screen and (min-width: $portatil-breakpoint) {
                                         color: $background;
                                     }
                                 }

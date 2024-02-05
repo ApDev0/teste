@@ -2,6 +2,7 @@
 
 .breadCrumb {
     //display: none;
+    font-size: medium;
     margin: 1rem;
     @media only screen and (min-width: $portatil-breakpoint) {
         display: flex;
@@ -27,6 +28,7 @@
     }
 
     h3{
+        font-size: 1.5rem;
         position: absolute;
         margin-top: -10.4rem;
         align-items: center;
@@ -42,24 +44,23 @@
 .info{
     margin: 2.5rem 1rem;
     p{
-        font-size: .9rem;
+        font-size: medium;
     }
 }
 
 .tratar{
     background-color: $textHover;
-    height: 12rem;
+    height: 8rem;
     margin: 1rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 
     h3{
-        font-size: 
-        1.2rem;
+        font-size: 1rem;
     }
 
     a{

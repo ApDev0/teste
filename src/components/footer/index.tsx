@@ -15,7 +15,7 @@ function Footer() {
       </div>
       <div className={styles.textFooter}>
         <p>© 2024 CONSULADO GERAL DA REPÚBLICA DE ANGOLA NO PORTO</p>
-        <p>Designed By <Link href={'www.apdev.com'}>DevSembo</Link></p>
+        <p>Designed By <Link href={'https://www.apdev.com'}>DevSembo</Link></p>
       </div>
 
     </section>

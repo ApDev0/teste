@@ -21,8 +21,8 @@ export default function inscricao_consular() {
             </div>
             <div className={styles.tratar}>
                 <h3>Quer pedir a inscrição consular?</h3>
-                <Link href={'servicos/registos/iscricao_consular/inscricao_consular_1_vez'}>1ª Vez</Link>
-                <Link href={'servicos/registos/iscricao_consular/renovacao_ou-2a-via'}>Renovação e 2ª Via</Link>
+                <Link href={'/servicos/registos/inscricao_consular/inscricao_consular_1avez'}>1ª Vez</Link>
+                <Link href={'/servicos/registos/inscricao_consular/renovacao-ou-2avia'}>Renovação e 2ª Via</Link>
             </div>
         </div>
     )
