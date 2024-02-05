@@ -11,7 +11,7 @@ const items = [
         items: [
             {
                 title: "Sobre",
-                path: "/consulado/#",
+                path: "/consulado",
                 subitem: [
                     {
                         title: 'O nosso comprimisso',
@@ -44,7 +44,7 @@ const items = [
                 subitem: [
                     {
                         title: "Inscrição Consular",
-                        path: "/inscricao_consular"
+                        path: "/servicos/registos/inscricao_consular"
                     },
                     {
                         title: "Nascimento",

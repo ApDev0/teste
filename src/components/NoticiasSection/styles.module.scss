@@ -126,6 +126,7 @@
                     -webkit-line-clamp: 3;
                     -webkit-box-orient: vertical;
                     text-overflow: ellipsis;
+                    color: $background;
 
                     @media only screen and (min-width: $desktop-breakpoint) {
                         color: $background;
