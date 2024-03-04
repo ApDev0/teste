@@ -48,13 +48,12 @@
             left: 0%;
             right: 0;
             height: 100vh;
+            margin-bottom: 2rem;
             transform: translateX(100%);
             opacity: 0;
             visibility: hidden;
             transition: transform 0.5s ease;
             background-color: $background;
-
-
 
             @media only screen and (min-width: $tablet-breakpoint) {
                 top: 2rem;
@@ -73,6 +72,12 @@
                 transform: scale(1);
                 opacity: 1;
                 visibility: visible;
+                overflow-y: visible; /* Desativar o scroll em telas maiores */
+            }
+
+            @media only screen and (max-width: $tablet-breakpoint) {
+                overflow-y: auto; /* Ativar o scroll apenas em telas menores */
+                overflow-x: hidden; /* Esconder o scroll horizontal */
             }
 
             @media only screen and (min-width: $desktop-breakpoint) {
@@ -127,8 +132,8 @@
                         font-family: "poppins", sans-serif;
                         font-weight: bold;
                         font-size: large;
-                        padding: 0 .5rem;
-                        border-bottom: .5px solid $lightGray;
+                        padding: 0 0.5rem;
+                        border-bottom: 0.5px solid $lightGray;
                         width: 100%;
 
                         @media only screen and (min-width: $portatil-breakpoint) {
@@ -137,22 +142,21 @@
                     }
 
                     span {
-                        margin: 0 .5rem;
+                        margin: 0 0.5rem;
                         color: $blueMirex;
                         font-weight: 600;
                         font-size: large;
                         display: flex;
                         align-items: center;
                         //justify-content: center;
-                        padding: 0 .9rem;
-                        border-bottom: .5px solid $lightGray;
+                        padding: 0 0.9rem;
+                        border-bottom: 0.5px solid $lightGray;
                         width: 100%;
 
                         @media only screen and (min-width: $portatil-breakpoint) {
                             border: none;
                             justify-content: center;
                             padding: 0;
-
                         }
                     }
 
@@ -182,11 +186,10 @@
                         display: flex;
                         flex-direction: column;
                         position: relative;
-                        margin: .5rem 0;
+                        margin: 0.5rem 0;
                         list-style: none;
                         padding: 1rem 0;
                         width: auto;
-
 
                         span {
                             display: flex;
@@ -194,9 +197,9 @@
                             justify-content: space-between;
                             align-items: center;
                             font-size: medium;
-                            margin: .3rem 0;
+                            margin: 0.3rem 0;
                             //border: none;
-                            border-bottom: .5px solid $lightGray;
+                            border-bottom: 0.5px solid $lightGray;
 
                             li {
                                 @media only screen and (min-width: $desktop-breakpoint) {
@@ -214,7 +217,7 @@
                         }
 
                         ul {
-                            color: $background
+                            color: $background;
                         }
 
                         .subItem {
@@ -238,14 +241,12 @@
                             font-size: medium;
 
                             span {
-
                                 li {
                                     @media only screen and (min-width: $desktop-breakpoint) {
                                         color: $background;
                                     }
 
                                     a {
-
                                         @media only screen and (min-width: $desktop-breakpoint) {
                                             color: $background;
                                         }
@@ -303,8 +304,6 @@
                             color: $background;
                         }
                     }
-
-
                 }
             }
         }

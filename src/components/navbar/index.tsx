@@ -5,6 +5,7 @@ import Logo from '../../../public/assets/mirexLogo1.jpg'
 import Link from 'next/link';
 import { Input } from '../ui/Input';
 import { IoIosMenu, IoIosArrowDown, IoMdClose, IoIosArrowUp } from "react-icons/io";
+import { AppBar } from '@mui/material';
 
 import items from './items';
 
@@ -34,46 +35,47 @@ function Navbar() {
     return (
         <header className={styles.HeaderContent}>
             <div className={styles.navBarContent}>
+            <AppBar/>
                 <div className={styles.logoContent}>
                     <Link href={'/'} rel='preload'>
-                        <Image alt='Mirex Logo' src={Logo} className={styles.navImg}/>
+                        <Image alt='Mirex Logo' src={Logo} className={styles.navImg} />
                         <h4>Consulado Geral de Angola no Porto</h4>
                     </Link>
                 </div>
 
                 <nav className={`${styles.navBarMenu} ${menuOpen ? styles.showNav : ''} `}>
                     <div className={styles.navBarEnd}>
-                            {items.map((item, i) => (
-                                <li key={i} className={styles.navBarItem}>
-                                    {item.items ? (
-                                        <div>
-                                            <span onClick={() => handleDropdownClick(item.title)}>{item.title} {dropdownStates[item.title] ? <IoIosArrowUp /> : <IoIosArrowDown />}</span>
-                                            {dropdownStates[item.title] && (
-                                                <ul className={styles.dropdown}>
-                                                    {item.items.map((subitem, j) => (
-                                                        <li key={j}>
-                                                            <div>
-                                                                <span onClick={() => handleDropdownClick(subitem.title)}>{subitem.title} {dropdownStates[subitem.title] ? <IoIosArrowUp /> : <IoIosArrowDown />} </span>
-                                                                {dropdownStates[subitem.title] && (
-                                                                    <ul className={styles.dropdown2}>
-                                                                        {subitem.subitem?.map((subitem, sb) => (
-                                                                            <li key={sb} className={styles.subItem}>    
-                                                                                <Link href={subitem.path} onClick={closeMenu} >{subitem.title}</Link>
-                                                                            </li>
-                                                                        ))}
-                                                                    </ul>
-                                                                )}
-                                                            </div>
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            )}
-                                        </div>
-                                    ) : (
-                                        <Link href={item.path} onClick={closeMenu}>{item.title}  </Link>
-                                    )}
-                                </li>
-                            ))}
+                        {items.map((item, i) => (
+                            <li key={i} className={styles.navBarItem}>
+                                {item.items ? (
+                                    <div>
+                                        <span onClick={() => handleDropdownClick(item.title)}>{item.title} {dropdownStates[item.title] ? <IoIosArrowUp /> : <IoIosArrowDown />}</span>
+                                        {dropdownStates[item.title] && (
+                                            <ul className={styles.dropdown}>
+                                                {item.items.map((subitem, j) => (
+                                                    <li key={j}>
+                                                        <div>
+                                                            <span onClick={() => handleDropdownClick(subitem.title)}>{subitem.title} {dropdownStates[subitem.title] ? <IoIosArrowUp /> : <IoIosArrowDown />} </span>
+                                                            {dropdownStates[subitem.title] && (
+                                                                <ul className={styles.dropdown2}>
+                                                                    {subitem.subitem?.map((subitem, sb) => (
+                                                                        <li key={sb} className={styles.subItem}>
+                                                                            <Link href={subitem.path} onClick={closeMenu} >{subitem.title}</Link>
+                                                                        </li>
+                                                                    ))}
+                                                                </ul>
+                                                            )}
+                                                        </div>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        )}
+                                    </div>
+                                ) : (
+                                    <Link href={item.path} onClick={closeMenu}>{item.title}  </Link>
+                                )}
+                            </li>
+                        ))}
                     </div>
                 </nav>
 

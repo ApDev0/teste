@@ -78,8 +78,13 @@ export default function Home() {
             </div>
           </div>
 
-          <button>
-            Agendar Visita
+          <button
+            type='button'
+          >
+            <Link href={'/agendar'}>
+              Agendar Visita
+            </Link>
+
           </button>
         </div>
         <p>Por favor, para sua comodidade evite deslocar-se ao Consulado Geral sem antes verificar os requisitos necessarios para o serviço que pretenda.</p>
